@@ -1,0 +1,126 @@
+<section class="experience-section">
+  
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header">
+        <div>
+          <span class="timeline-year">February 2026 - July 2026</span>
+          <h3>First American India</h3>
+          <p>Senior Software Engineer II</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header">
+        <div>
+          <span class="timeline-year">March 2024 — January 2026</span>
+          <h3>Reliable Group</h3>
+          <p>Senior Python Developer / AI Engineer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header">
+        <div>
+          <span class="timeline-year">March 2018 — March 2024</span>
+          <h3>NeoSOFT Technologies</h3>
+          <p>Software Engineer → Associate Team Lead (Data Science)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .experience-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .experience-section h2 {
+    margin-bottom: 35px;
+  }
+
+  .timeline {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  /* Vertical connecting line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--line);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 35px;
+  }
+
+  /* Timeline dot */
+  .timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--muted);
+    z-index: 2;
+  }
+
+  .timeline-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    color: inherit;
+  }
+
+  .timeline-year {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-bottom: 4px;
+  }
+
+  .timeline-header h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .timeline-header p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    opacity: 0.75;
+  }
+
+  @media (max-width: 600px) {
+    .experience-section {
+      padding: 0 15px;
+    }
+
+    .timeline-item {
+      padding-left: 35px;
+    }
+
+    .timeline-header h3 {
+      font-size: 18px;
+    }
+  }
+</style>

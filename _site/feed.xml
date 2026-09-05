@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-09-05T16:44:32+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akshay Mewada</title><subtitle>Software, AI, and the things I learn along the way.</subtitle><author><name>Akshay Mewada</name></author><entry><title type="html">Full Stack Machine Learning</title><link href="http://localhost:4000/posts/2020/08/fullstack-machine-learning" rel="alternate" type="text/html" title="Full Stack Machine Learning" /><published>2020-08-08T00:00:00+05:30</published><updated>2020-08-08T00:00:00+05:30</updated><id>http://localhost:4000/posts/2020/08/fullstack-machine-learning</id><content type="html" xml:base="http://localhost:4000/posts/2020/08/fullstack-machine-learning"><![CDATA[<p class="article-subtitle">After Data Scientist a Full-stack machine learning developer is the most trending job.</p>
+
+<h2 id="why-ml-engineers-should-move-to-full-stack">Why ML engineers should move to Full Stack?</h2>
+
+<p>After all, the hard work of ML developers creates a model for a particular problem. During training, testing the model gives good accuracy and works well.</p>
+
+<p>When they integrate Model with APIs/Web services in the development and testing environment it works well.</p>
+
+<p>But, at the time of production, it fails to serve.</p>
+
+<h3 id="the-number-of-problems-faced-when-moving-ml-service-to-production-some-of-them-are">The number of problems faced when moving ML service to Production, some of them are:</h3>
+
+<ul>
+  <li><strong>The architecture of Service:</strong> Most of the ML solution fails in production because of bad architectures. The architecture is not matured to handle the customer environment.</li>
+  <li><strong>Stacks Expertise:</strong> The team with different stack expertise also can cause failure in ML service production. Like the team of Software Engineer, Frontend Engineer, Deployment Engineer, and DevOps Engineer. They fail to move ML service to production because of a lack of communication, knowledge towards technology, etc.</li>
+  <li><strong>Hardware and Software:</strong> The ML service requires good hardware and supportive software. The bad system configuration and choosing cheaper supportive software can cause bad ML service.</li>
+</ul>
+
+<blockquote>
+  <p>To solve the problem Machine Learning Developers must have an idea and hands-on every stack of Web technologies. So, that they can develop better architecture and scalable solutions for ML service. It is good direction towards productivity. Also vise-versa for all other developers.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>Try to learn something about everything and everything about something.</em></p>
+
+  <p>— Thomas Huxley</p>
+</blockquote>
+
+<h2 id="what-requires-to-become-a-full-stack-machine-learning-developer">What requires to become a full-stack machine learning developer?</h2>
+
+<blockquote>
+  <p><em>Full-stack Machine Learning Developers have knowledge and hands-on every stack of web technologies and Machine Learning.</em></p>
+</blockquote>
+
+<ul>
+  <li>Machine Learning (obviously this is core…)</li>
+  <li>Backend (all ML developers must know this… To serve model…)</li>
+  <li>Frontend (most ML developers hate this… it is optional…)</li>
+  <li>Deployment (most ML developers fail here… they fail to scale…)</li>
+</ul>
+
+<h2 id="process-to-become-full-stack-ml-developer">Process To Become Full Stack ML Developer</h2>
+
+<p><img src="/assets/postimages/full-stack-machine-learning-2.jpg" alt="Full-stack machine learning development process" /></p>
+
+<h3 id="machine-learning">Machine Learning</h3>
+
+<p>To become Full-Stack you must have expertise in most of the machine learning pipeline and algorithms.</p>
+
+<h4 id="ml-pipeline-you-must-know">ML Pipeline you must know</h4>
+
+<ul>
+  <li>Getting Data</li>
+  <li>Preparing Data (Data Analysis and Preprocessing)</li>
+  <li>Choosing Model</li>
+  <li>Training, Testing, and Validation</li>
+  <li>Prediction.</li>
+</ul>
+
+<h4 id="algorithms">Algorithms</h4>
+
+<ul>
+  <li>Linear Regression, Logistic Regression, Dtree, Random Forest</li>
+  <li>Bagging and Boosting</li>
+  <li>K-Nearest Neighbour, Support Vector Machine</li>
+  <li>Single Layer Perceptron, Multi-Layer Perceptron, Feed Forward</li>
+  <li>CNN, RNN, LSTM, GRU, BERT</li>
+  <li>Naive Bayes, Markov-Model, Graph Models, etc.</li>
+</ul>
+
+<p><em>Also, you must have knowledge of statics and probability, natural language processing, Image Processing, Data Analytics, etc.</em></p>
+
+<h3 id="backend">Backend</h3>
+
+<p>To serve a machine learning model for everyone, a web app/web API is required. Backend makes possible connecting your machine learning model to real-life and real-time data. you must know,</p>
+
+<ul>
+  <li>Database (SQL/NoSQL/Graph)</li>
+  <li>Programming Language (Python/Java/Nodejs/etc)</li>
+  <li>Web-Frameworks, API, and Microservices, etc.</li>
+</ul>
+
+<p>The architecture of the backend holds up everything. Like creating a pluggable, reusable, and with proper application design will make good machine learning application.</p>
+
+<p>For eg, you have created a machine learning model for sentiment analysis using any library (Scikit-Learn, Tensorflow, Caffe, Pytorch, etc ) to create the ML model. To analyze the given text create API for sentiment detection. API is created using any web framework (flask/Django/fast API).</p>
+
+<p>The customer interaction logs and other details are stored in the database for future work and plans using database management.</p>
+
+<h4 id="sentiment-analysis">Sentiment Analysis</h4>
+
+<p>This sentiment analysis API extracts sentiment in a given string of text. Sentiment analysis, also called ‘opinion…</p>
+
+<p><a href="https://deepai.org/machine-learning-model/sentiment-analysis" target="_blank">Try sentiment analysis on DeepAI</a></p>
+
+<h3 id="frontend">Frontend</h3>
+
+<p>The front end of a website is the part that users interact with. Everything that you see when you’re navigating around the Internet, from fonts and colors to dropdown menus and sliders, is an HTML, CSS, and JavaScript being controlled by your computer’s browser.</p>
+
+<p>As a full-stack ML developer, it is an optional stack. But basic knowledge is a plus point.</p>
+
+<h3 id="deployment">Deployment</h3>
+
+<p>Deployment is the process of making your application available for use on the internet.</p>
+
+<p><img src="/assets/postimages/full-stack-machine-learning-3.jpg" alt="Machine learning model deployment" /></p>
+
+<p>After creating the backend code with ML-model. The code is tested locally. Testing gives a go-ahead signal for production.</p>
+
+<p><strong>You must know for Deployment:</strong></p>
+
+<h4 id="hosting-and-os">Hosting and OS</h4>
+
+<p>For deployment, you need a hosting server provided by paid business companies like Amazon Web Services, Microsoft Azure, Google Cloud Platform.</p>
+
+<p>Selecting the best hardware, operating system, Software, Databases, option for services.</p>
+
+<h4 id="web-server">Web Server</h4>
+
+<p>Dedicated running software which can satisfy client request on the world wide web. The web server responds to the HTTP request and serves the service. The famous web servers are NGINX, Apache Webserver, Microsoft IIS.</p>
+
+<p>This is important for ML-Developer here he can scale client requests for service.</p>
+
+<h4 id="docker">Docker</h4>
+
+<p>Docker is an infrastructure management platform for running and deploying software. Docker can package up applications along with their necessary operating system dependencies for easier deployment across environments. In the long run, it has the potential to be the abstraction layer that easily manages containers running on top of any type of server, regardless of whether that server is on Amazon Web Services, Google Compute Engine, Linode, Rackspace, or elsewhere.</p>
+
+<p><strong>Docker is the best option for ML developers to deploy the machine learning model.</strong></p>
+
+<p>Also, there are some practices that can help in a deployment like CI/CD method, Configuration Management, etc.</p>
+
+<p>After reading this article I am sure you have an overview of Full-stack ML developer stack.</p>
+
+<p>Thank You !!!</p>]]></content><author><name>Akshay Mewada</name></author><category term="machine learning" /><category term="full stack" /><category term="python" /><category term="data science" /><summary type="html"><![CDATA[After Data Scientist a Full-stack machine learning developer is the most trending job.]]></summary></entry></feed>

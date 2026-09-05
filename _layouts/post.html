@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article>
+  <a class="back-link" href="{{ '/articles/' | relative_url }}">← All articles</a>
+  <header class="post-header">
+    <p class="eyebrow">Field notes</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% assign minutes = content | strip_html | number_of_words | plus: 219 | divided_by: 220 %}
+    <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time> · {{ minutes }} min read</p>
+  </header>
+  <div class="prose">{{ content }}</div>
+  {% if page.tags.size > 0 %}<ul class="tags" aria-label="Topics">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+</article>

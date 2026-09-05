@@ -1,0 +1,263 @@
+[
+  {
+    "name": "public_suffix",
+    "version": "7.0.5",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://simonecarletti.com/code/publicsuffix-ruby"
+  },
+  {
+    "name": "addressable",
+    "version": "2.9.0",
+    "declared_licenses": [
+      "Apache-2.0"
+    ],
+    "homepage": "https://github.com/sporkmonger/addressable"
+  },
+  {
+    "name": "bundler",
+    "version": "4.0.20",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://bundler.io"
+  },
+  {
+    "name": "colorator",
+    "version": "1.1.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/octopress/colorator"
+  },
+  {
+    "name": "concurrent-ruby",
+    "version": "1.3.8",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://www.concurrent-ruby.com"
+  },
+  {
+    "name": "csv",
+    "version": "3.3.6",
+    "declared_licenses": [
+      "Ruby",
+      "BSD-2-Clause"
+    ],
+    "homepage": "https://github.com/ruby/csv"
+  },
+  {
+    "name": "eventmachine",
+    "version": "1.2.7",
+    "declared_licenses": [
+      "Ruby",
+      "GPL-2.0"
+    ],
+    "homepage": "http://rubyeventmachine.com"
+  },
+  {
+    "name": "http_parser.rb",
+    "version": "0.8.1",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/tmm1/http_parser.rb"
+  },
+  {
+    "name": "em-websocket",
+    "version": "0.5.3",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://github.com/igrigorik/em-websocket"
+  },
+  {
+    "name": "ffi",
+    "version": "1.17.4",
+    "declared_licenses": [
+      "BSD-3-Clause"
+    ],
+    "homepage": "https://github.com/ffi/ffi/wiki"
+  },
+  {
+    "name": "forwardable-extended",
+    "version": "2.6.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://github.com/envygeeks/forwardable-extended"
+  },
+  {
+    "name": "i18n",
+    "version": "1.15.2",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/ruby-i18n/i18n"
+  },
+  {
+    "name": "rb-fsevent",
+    "version": "0.11.2",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://rubygems.org/gems/rb-fsevent"
+  },
+  {
+    "name": "rb-inotify",
+    "version": "0.11.1",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/guard/rb-inotify"
+  },
+  {
+    "name": "sass-listen",
+    "version": "4.0.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/sass/listen"
+  },
+  {
+    "name": "sass",
+    "version": "3.7.4",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://sass-lang.com/"
+  },
+  {
+    "name": "jekyll-sass-converter",
+    "version": "1.5.2",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/jekyll-sass-converter"
+  },
+  {
+    "name": "logger",
+    "version": "1.7.0",
+    "declared_licenses": [
+      "Ruby",
+      "BSD-2-Clause"
+    ],
+    "homepage": "https://github.com/ruby/logger"
+  },
+  {
+    "name": "listen",
+    "version": "3.10.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/guard/listen"
+  },
+  {
+    "name": "jekyll-watch",
+    "version": "2.2.1",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/jekyll-watch"
+  },
+  {
+    "name": "rexml",
+    "version": "3.4.4",
+    "declared_licenses": [
+      "BSD-2-Clause"
+    ],
+    "homepage": "https://github.com/ruby/rexml"
+  },
+  {
+    "name": "kramdown",
+    "version": "2.5.2",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://kramdown.gettalong.org"
+  },
+  {
+    "name": "liquid",
+    "version": "4.0.4",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://www.liquidmarkup.org"
+  },
+  {
+    "name": "mercenary",
+    "version": "0.3.6",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/mercenary"
+  },
+  {
+    "name": "pathutil",
+    "version": "0.16.2",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "http://github.com/envygeeks/pathutil"
+  },
+  {
+    "name": "rouge",
+    "version": "3.30.0",
+    "declared_licenses": [
+      "MIT",
+      "BSD-2-Clause"
+    ],
+    "homepage": "http://rouge.jneen.net/"
+  },
+  {
+    "name": "safe_yaml",
+    "version": "1.0.5",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/dtao/safe_yaml"
+  },
+  {
+    "name": "webrick",
+    "version": "1.9.2",
+    "declared_licenses": [
+      "Ruby",
+      "BSD-2-Clause"
+    ],
+    "homepage": "https://github.com/ruby/webrick"
+  },
+  {
+    "name": "jekyll",
+    "version": "3.10.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/jekyll"
+  },
+  {
+    "name": "jekyll-feed",
+    "version": "0.17.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/jekyll-feed"
+  },
+  {
+    "name": "jekyll-sitemap",
+    "version": "1.4.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/jekyll/jekyll-sitemap"
+  },
+  {
+    "name": "kramdown-parser-gfm",
+    "version": "1.1.0",
+    "declared_licenses": [
+      "MIT"
+    ],
+    "homepage": "https://github.com/kramdown/parser-gfm"
+  }
+]

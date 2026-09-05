@@ -1,0 +1,18 @@
+---
+title: Articles
+eyebrow: Ideas, experiments & lessons
+permalink: /articles/
+---
+<p class="intro">Notes on software, machine learning, and building things that work.</p>
+<div class="article-list">
+{% for post in site.posts %}
+  <article class="article-preview">
+    <time class="meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
+    <a class="read-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">Read article <span aria-hidden="true">↗</span></a>
+  </article>
+{% else %}
+  <p>New articles are on the way.</p>
+{% endfor %}
+</div>
