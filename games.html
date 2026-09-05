@@ -1,0 +1,21 @@
+---
+title: Games
+eyebrow: Play, explore & learn
+permalink: /games/
+---
+<p class="intro">A playground for AI games, puzzles, and quizzes. Try a challenge below, and check back for new experiments.</p>
+<div class="games-grid">
+{% assign games = site.games | sort: 'title' %}
+{% for game in games %}
+  <article class="game-card">
+    <img class="game-card-image" src="{{ game.image | default: '/assets/images/games/nqueens-error-conflict.gif' | relative_url }}" alt="{{ game.image_alt | default: 'Game preview' | escape }}" width="640" height="400" loading="lazy">
+    <span class="game-category">{{ game.category | default: 'Game' | escape }}</span>
+    <h2><a href="{{ game.url | relative_url }}">{{ game.title | escape }}</a></h2>
+    <p>{{ game.description | escape }}</p>
+    <a class="read-link" href="{{ game.url | relative_url }}" aria-label="Play {{ game.title | escape }}">Play now <span aria-hidden="true">↗</span></a>
+  </article>
+{% else %}
+  <p>The first games and quizzes are on the way. Check back soon!</p>
+{% endfor %}
+</div>
+<p class="meta">More AI games and quizzes coming soon.</p>

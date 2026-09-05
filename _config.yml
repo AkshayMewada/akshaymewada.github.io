@@ -13,6 +13,10 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
 exclude:
   - README.md
   - LICENSE-AUDIT.md
@@ -23,6 +27,11 @@ exclude:
   - vendor
   - .bundle
 defaults:
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: game
   - scope:
       path: ""
     values:

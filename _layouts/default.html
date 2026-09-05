@@ -16,7 +16,7 @@
       <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title | escape }}<span aria-hidden="true">.</span></a>
       <nav aria-label="Main navigation">
         {% for item in site.data.navigation %}
-        <a href="{{ item.url | relative_url }}"{% if page.url == item.url or item.url == '/articles/' and page.collection == 'posts' %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% elsif item.url == '/articles/' and page.collection == 'posts' %} aria-current="page"{% elsif item.url == '/games/' and page.collection == 'games' %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
         {% endfor %}
       </nav>
     </div>

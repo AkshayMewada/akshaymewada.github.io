@@ -20,6 +20,23 @@ This folder is excluded from the parent site's build. To publish it, use this fo
 
 LICENSE is retained from the source repository for provenance. The new layout/CSS files were created for this template; copied personal content and assets retain their existing rights.
 
+## Add a game or quiz
+
+Create an HTML or Markdown file in `_games/` with front matter like this:
+
+```yaml
+---
+title: My AI Quiz
+category: Quiz
+description: A short description of the challenge.
+embed: my-ai-quiz.html
+image: /assets/images/games/my-ai-quiz.svg
+image_alt: A preview of my AI quiz.
+---
+```
+
+Put the playable HTML, styles, and JavaScript in `_includes/my-ai-quiz.html` and add a preview image at the `image` path. The Games listing shows a preview card with a Play button linking to `/games/my-ai-quiz/` (for `_games/my-ai-quiz.html`). The game page loads the `embed` include. Use `category: AI game`, `Puzzle`, or `Quiz` as appropriate. Restart the local Jekyll server after changing collection settings in `_config.yml`.
+
 ## License review
 
 See [LICENSE-AUDIT.md](LICENSE-AUDIT.md) for verified provenance and unresolved asset permissions, and [DEPENDENCY-LICENSES.json](DEPENDENCY-LICENSES.json) for the installed dependency license inventory. These files are excluded from generated site output.

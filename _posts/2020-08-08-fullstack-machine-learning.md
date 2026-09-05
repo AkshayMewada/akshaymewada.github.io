@@ -7,10 +7,13 @@ tags:
   - full stack
   - python
   - data science
+  - artificial intelligence
 ---
 
 After Data Scientist a Full-stack machine learning developer is the most trending job.
 {: .article-subtitle }
+
+**Originally posted on:** [Medium](https://medium.com/@akshaymewada/full-stack-machine-learning-developer-c67c266080a5)
 
 ## Why ML engineers should move to Full Stack?
 
