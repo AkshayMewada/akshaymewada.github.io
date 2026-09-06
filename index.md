@@ -4,7 +4,7 @@ eyebrow: Hello, I’m Akshay
 permalink: /
 ---
 
-I'm an **Software Developer with 8+ years of experience** building software and Software solutions across **healthcare, finance, HR, and enterprise applications**. 
+I'm a **Software Developer with 8+ years of experience** building software and Software solutions across **healthcare, finance, HR, and enterprise applications**. 
 
 I enjoy solving real-world problems with AI and building systems that go beyond prototypes into production. My work spans **Generative AI, LLMs, RAG, Document AI, Machine Learning, Search, and Conversational AI**.
 
