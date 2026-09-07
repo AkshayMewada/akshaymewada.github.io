@@ -26,13 +26,15 @@
     <aside class="profile" aria-label="Author profile">
       <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name | escape }}" width="88" height="88">
       <p class="profile-name">{{ site.author.name | escape }}</p>
-      <p>{{ site.author.bio | escape }}</p>
-      <p class="location">{{ site.author.location | escape }}</p>
-      <ul class="profile-links" aria-label="Social profiles">
-        {% for link in site.data.social %}<li><a href="{{ link.url | escape }}">{% include social-icon.html name=link.icon %}<span>{{ link.title | escape }}</span></a></li>{% endfor %}
-      </ul>
+      <p class="bio-title">{{ site.author.bio | escape }}</p>
+      <p class="bio-subtitle">{{ site.author.bio-ext | escape }}</p>
+      <!-- <p class="location">{{ site.author.location | escape }}</p> -->
+      {% include social-links.html %}
     </aside>
     <main id="content" tabindex="-1">{{ content }}</main>
+  </div>
+  <div class="mobile-social">
+    {% include social-links.html %}
   </div>
   <footer class="site-footer">© {{ 'now' | date: '%Y' }} {{ site.author.name | escape }} <span>Built with care. Powered by Jekyll.</span></footer>
 </body>

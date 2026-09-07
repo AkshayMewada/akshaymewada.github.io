@@ -7,7 +7,8 @@ highlighter: rouge
 permalink: /articles/:title/
 author:
   name: Akshay Mewada
-  bio: Software Engineer — Automate When It Makes Sense
+  bio: Software Engineer 
+  bio-ext: Automate When It Makes Sense
   location: Mumbai, India
   avatar: /assets/images/profile.jpg
 plugins:

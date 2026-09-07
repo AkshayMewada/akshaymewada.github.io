@@ -1,0 +1,3 @@
+<ul class="profile-links" aria-label="Social profiles">
+  {% for link in site.data.social %}<li><a href="{{ link.url | escape }}">{% include social-icon.html name=link.icon %}<span>{{ link.title | escape }}</span></a></li>{% endfor %}
+</ul>
