@@ -282,9 +282,9 @@ hr {
   border-bottom:1px solid var(--line)
 }
 
-.article-preview:first-child {
+/* .article-preview:first-child {
   border-top:1px solid var(--line)
-}
+} */
 
 .article-preview h2 {
   margin:.5rem 0 .75rem
