@@ -11,6 +11,10 @@ document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
   });
 
   dropdown.addEventListener('focusout', (event) => {
-    if (!dropdown.contains(event.relatedTarget)) dropdown.open = false;
+    // Safari may blur the summary without focusing a clicked link. Keep the
+    // menu visible until that click finishes; outside clicks are handled above.
+    if (event.relatedTarget && !dropdown.contains(event.relatedTarget)) {
+      dropdown.open = false;
+    }
   });
 });

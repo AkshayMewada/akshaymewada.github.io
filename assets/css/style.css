@@ -172,8 +172,8 @@ nav a[aria-current] {
   left:0;
   top:100%;
   min-width:9rem;
-  margin:.25rem 0 0;
-  padding:.4rem;
+  margin:0;
+  padding:0;
   list-style:none;
   background:var(--surface);
   border:1px solid var(--line);
@@ -181,11 +181,25 @@ nav a[aria-current] {
   box-shadow:0 5px 18px rgb(0 0 0 / 8%)
 }
 
-.nav-submenu a {
-  display:block;
-  padding:.5rem .75rem;
-  border-radius:4px
+.nav-submenu li {
+  margin:0;
+  padding:0
 }
+
+.nav-submenu a {
+  display:flex;
+  align-items:center;
+  width:100%;
+  min-height:44px;
+  margin:0;
+  padding:.65rem 1rem;
+  cursor:pointer
+}
+
+.nav-submenu li:first-child a { border-radius:7px 7px 0 0; }
+.nav-submenu li:last-child a { border-radius:0 0 7px 7px; }
+.nav-submenu li:only-child a { border-radius:7px; }
+.nav-submenu a:focus-visible { outline-offset:-3px; }
 
 .nav-submenu a:hover,.nav-submenu a:focus-visible {
   background:var(--bg);
@@ -220,6 +234,11 @@ main {
   object-fit:cover;
   display:block;
   margin-inline:auto
+}
+
+:root:not([data-theme="dark"]) .profile img {
+  outline:1px solid var(--line);
+  outline-offset:2px
 }
 
 .profile .profile-name {
