@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+[
+{% assign documents = site.documents %}
+{% assign first = true %}
+{% for document in documents %}
+  {% if document.title and document.title != '' and document.url != '/404.html' %}
+    {% assign kind = 'Lab' %}
+    {% if document.collection == 'posts' %}{% assign kind = 'Post' %}{% endif %}
+    {% if document.collection == 'games' %}{% assign kind = 'Game' %}{% endif %}
+    {% for item in site.data.navigation %}
+      {% if item.title == 'Lab' or item.title == 'Labs' %}
+        {% for child in item.children %}
+          {% if child.url == document.url %}{% assign kind = 'Lab' %}{% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% unless first %},{% endunless %}
+    {
+      "title": {{ document.title | jsonify }},
+      "url": {{ document.url | relative_url | jsonify }},
+      "type": {{ kind | jsonify }},
+      "preview": {{ document.description | default: document.excerpt | default: document.content | strip_html | normalize_whitespace | truncate: 160 | jsonify }},
+      "content": {{ document.content | strip_html | normalize_whitespace | jsonify }}
+    }
+    {% assign first = false %}
+  {% endif %}
+{% endfor %}
+]

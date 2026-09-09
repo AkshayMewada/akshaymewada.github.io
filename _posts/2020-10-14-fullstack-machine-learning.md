@@ -1,6 +1,6 @@
 ---
 title: 'Full Stack Machine Learning'
-date: 2020-08-08
+date: 2020-10-14
 permalink: /posts/2020/08/fullstack-machine-learning
 tags:
   - machine learning

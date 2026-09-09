@@ -2,10 +2,10 @@
   url: /
 - title: Posts
   url: /articles/
-- title: Lab
+- title: Notes
   children:
-    - title: Search
-      url: /articles/search/
+    - title: Text Searches
+      url: /articles/text-search/
 - title: Play
   url: /games/
 - title: Resume

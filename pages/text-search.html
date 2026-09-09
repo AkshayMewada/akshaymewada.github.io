@@ -1,0 +1,20 @@
+---
+title: Text Searches
+eyebrow: Notes · Search
+permalink: /articles/text-search/
+description: Articles on finding words, phrases, and relevant documents in text.
+---
+<p class="intro">Notes on finding words, phrases, and relevant documents in text.</p>
+<div class="article-list">
+  {% assign notes = site.pages | where: 'note_topic', 'text-searches' | sort: 'title' %}
+  {% for note in notes %}
+  <article class="article-preview">
+    <h2><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a></h2>
+    {% if note.description %}<p>{{ note.description | escape }}</p>{% endif %}
+    <a class="read-link" href="{{ note.url | relative_url }}" aria-label="Read {{ note.title | escape }}">Read article
+      <span aria-hidden="true">↗</span></a>
+  </article>
+  {% else %}
+  <p>Text search articles are on the way.</p>
+  {% endfor %}
+</div>

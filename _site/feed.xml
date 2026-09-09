@@ -1,4 +1,374 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-09-09T12:51:03+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akshay Mewada</title><subtitle>Software, AI, and the things I learn along the way.</subtitle><author><name>Akshay Mewada</name></author><entry><title type="html">Full Stack Machine Learning</title><link href="http://localhost:4000/posts/2020/08/fullstack-machine-learning" rel="alternate" type="text/html" title="Full Stack Machine Learning" /><published>2020-08-08T00:00:00+05:30</published><updated>2020-08-08T00:00:00+05:30</updated><id>http://localhost:4000/posts/2020/08/fullstack-machine-learning</id><content type="html" xml:base="http://localhost:4000/posts/2020/08/fullstack-machine-learning"><![CDATA[<p class="article-subtitle">After Data Scientist a Full-stack machine learning developer is the most trending job.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-09-09T15:47:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akshay Mewada</title><subtitle>Software, AI, and the things I learn along the way.</subtitle><author><name>Akshay Mewada</name></author><entry><title type="html">Faking It Till They Make It: The Data Science Profile Predicament</title><link href="http://localhost:4000/articles/faking-it-till-they-make-it-the-data-science-profile-predicament/" rel="alternate" type="text/html" title="Faking It Till They Make It: The Data Science Profile Predicament" /><published>2023-07-25T16:08:56+05:30</published><updated>2023-07-25T16:08:56+05:30</updated><id>http://localhost:4000/articles/faking-it-till-they-make-it-the-data-science-profile-predicament</id><content type="html" xml:base="http://localhost:4000/articles/faking-it-till-they-make-it-the-data-science-profile-predicament/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/faking-it-till-they-make-it-the-data-science-profile-predicament-3d3a11f66c66">Medium</a>.</p>
+
+<blockquote>
+  <p>Faking experience is waste of time and money for a Individual, Consultancy, and Client.</p>
+</blockquote>
+
+<p><em>In today’s digital world, data is growing rapidly. As a result, there is a huge demand in the market for Data Scientists and Data Engineers who can handle this data and generate insights from it. The demand is so high that industries are facing a shortage of skilled Data Scientists and Data Engineers.</em></p>
+
+<p><em>This shortage presents a golden opportunity for consultancy (or IT service) companies to meet the requirement. Most consultancies fulfill the requirement with properly trained and qualified candidates. On the other hand, during this shortage of skilled candidates, some consultancies provide fake experiences/profiles of candidates just for the sake of money.</em></p>
+
+<p><img src="/assets/images/posts/medium/ea598c576f5459ea.png" alt="" /></p>
+
+<p><em>So, how do they try to fulfill the requirement? What do these consultancies do?</em></p>
+
+<ul>
+  <li><em>They train non-experienced or low experienced on required topics. The training can be for 1–3 months of period.</em></li>
+  <li><em>The candidates do learn tools and technologies during this training. But there is no touch of real-life problems that developers really face.</em></li>
+  <li><em>They create POCs on topics that are already out of date.</em></li>
+</ul>
+
+<p><em>After training, they begin providing profiles to different clients, which creates a significant impact on each.</em></p>
+
+<p><em>So what are the impacts? The impact of this fake profile on Individuals, Consultancy, and the company is below</em></p>
+
+<p><strong><em>Individuals</em></strong></p>
+
+<ul>
+  <li><em>The consequences for individuals caught up in this web of fraud can be severe and long-lasting.</em></li>
+  <li><em>For those who knowingly take part in such practices, they risk damaging their reputation and credibility within the industry.</em></li>
+  <li><em>Smart individuals may be tempted by the prospect of quick opportunities, but they ultimately undermine their own career growth.</em></li>
+  <li><em>Average individuals, on the other hand, may find themselves in over their heads, struggling to deliver results in the real world, and ultimately facing professional growth.</em></li>
+</ul>
+
+<p><strong><em>Consultancy</em></strong></p>
+
+<p><img src="/assets/images/posts/medium/de7679710af2352d.gif" alt="Animated illustration" /></p>
+
+<ul>
+  <li><em>Consulting companies using this unethical approach risk their brand image and lose the trust of both clients and genuine candidates.</em></li>
+  <li><em>Building a business on the foundation of fraud is incorrect and may lead to severe consequences in the long term.</em></li>
+  <li><em>A company that runs on fake profiles may deliver low-quality services, harms its clients, and slow down its own growth.</em></li>
+</ul>
+
+<p><strong><em>Client</em></strong></p>
+
+<ul>
+  <li><em>Clients who unknowingly engage with consultancy companies who share fake profiles may suffer significant setbacks in their projects.</em></li>
+  <li><em>As these fake profiles lack the required skills and experience, projects are likely to face delays, errors, and poor results, likely leading to financial losses and damaged relationships.</em></li>
+</ul>
+
+<p><em>In conclusion,</em></p>
+
+<p><em>The rapid increase in fake profiles within the Data Science and Data Engineering fields is a deeply concerning issue.</em></p>
+
+<p><em>It not only compromises the career prospects of individuals but also the integrity of consultancy companies and risks the success of clients’ projects.</em></p>
+
+<p><em>Addressing this problem requires collective efforts from all stakeholders involved. Companies must prioritize ethical hiring practices, invest in genuine talent development, and focus on delivering quality solutions to their clients.</em></p>
+
+<p><em>Individuals should avoid taking shortcuts and instead focus on acquiring skills and experiences.</em></p>
+
+<p><em>By this, we can create an environment of trust, integrity, and excellence within the data-driven industry and ensure a good future for all.</em></p>
+
+<p><em>Thank you.</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="data-engineering" /><category term="data-science" /><category term="machine-learning" /><category term="recruitment" /><category term="python" /><summary type="html"><![CDATA[Faking experience is waste of time and money for a Individual, Consultancy, and Client. In today’s digital world, data is growing rapidly. As a result, there is a huge demand in the…]]></summary></entry><entry><title type="html">Why Do You Want to Become a Data Scientist? Let’s Get Real!</title><link href="http://localhost:4000/articles/why-do-you-want-to-become-a-data-scientist-let-s-get-real/" rel="alternate" type="text/html" title="Why Do You Want to Become a Data Scientist? Let’s Get Real!" /><published>2023-07-23T16:42:11+05:30</published><updated>2023-07-23T16:42:11+05:30</updated><id>http://localhost:4000/articles/why-do-you-want-to-become-a-data-scientist-let-s-get-real</id><content type="html" xml:base="http://localhost:4000/articles/why-do-you-want-to-become-a-data-scientist-let-s-get-real/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/why-do-you-want-to-become-a-data-scientist-lets-get-real-248ca8af7bef">Medium</a>.</p>
+
+<p><em>So, you’re thinking about becoming a data scientist, huh? Well, I won’t judge you. In fact, I might even join you on this wild adventure.</em></p>
+
+<p><em>But let’s be honest here, why would anyone want to be a data scientist? Let’s explore some humorous possibilities.</em></p>
+
+<p><strong>Because of Trend:</strong></p>
+
+<p><img src="/assets/images/posts/medium/96b69d2658121519.jpg" alt="" /></p>
+
+<p>Photo by <a href="https://unsplash.com/es/@isaacmsmith?utm_source=medium&amp;utm_medium=referral">Isaac Smith</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+
+<p><em>Hey, we all want to be trendy, right? <br />
+If data science is the cool kid in town, why not jump on the bandwagon? <br />
+Maybe you can impress your friends at parties with your fancy job title.</em></p>
+
+<p><em>“Oh, excuse me, I’m just a data scientist, no big deal.”</em></p>
+
+<p><em>Trust me, the trendiness will wear off eventually, and you’ll be left with lots of data.</em></p>
+
+<p><strong>For Money:</strong></p>
+
+<p><img src="/assets/images/posts/medium/c5fb65764b7de9fd.gif" alt="Animated illustration" /></p>
+
+<p><em>Ah, the golden reason. We all need to pay the bills, and data science seems to offer fat paychecks. Just imagine swimming in a pool of cash while wearing your nerdiest glasses.</em></p>
+
+<p><em>But beware, my friend, money can’t buy happiness, especially when you’re stuck debugging code at 3 a.m. and questioning your life choices.</em></p>
+
+<p><strong>For the Future:</strong></p>
+
+<p><em>Data science is all about predicting the future, right? <br />
+So, why not secure your own future by becoming a data scientist? <br />
+You’ll have the power to foresee trends, know what people will eat for breakfast ten years from now, and maybe even predict the next fashion disaster.</em></p>
+
+<p><em>But let’s face it, the future is unpredictable, and no amount of data can guarantee you’ll ever find your car keys.</em></p>
+
+<p><strong>Interest? Are You Sure?:</strong></p>
+
+<p><img src="/assets/images/posts/medium/10a13c3c527762da.gif" alt="Animated illustration" /></p>
+
+<p><em>Ah, the most peculiar reason of all. Some people claim they want to become data scientists because they’re genuinely interested in the field. They love crunching numbers, exploring datasets, and discovering hidden patterns. Well, good for them! But let’s not forget that interest can fade faster than yesterday’s viral meme.</em></p>
+
+<p><em>Don’t be surprised if you find yourself staring at spreadsheets, daydreaming about becoming a circus joker instead.</em></p>
+
+<p><em>In the end,</em></p>
+
+<p><em>my friend, the choice to become a data scientist is yours. Whether it’s for trendiness, money, future predictions, or an inexplicable interest in all things data, just remember to bring your sense of humor along for the ride.</em></p>
+
+<p><em>Because when you’re knee-deep in datasets and debugging nightmares, laughter might be the only thing that saves you. Good luck, brave data scientist! You’ll need it.</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="data-scientist" /><category term="machine-learning" /><category term="python" /><category term="data-science" /><summary type="html"><![CDATA[So, you’re thinking about becoming a data scientist, huh? Well, I won’t judge you. In fact, I might even join you on this wild adventure. But let’s be honest here, why would anyone want…]]></summary></entry><entry><title type="html">Strategies for NLP Scientists in LLM Wave</title><link href="http://localhost:4000/articles/strategies-for-nlp-scientists-in-llm-wave/" rel="alternate" type="text/html" title="Strategies for NLP Scientists in LLM Wave" /><published>2023-07-23T13:00:38+05:30</published><updated>2023-07-23T13:00:38+05:30</updated><id>http://localhost:4000/articles/strategies-for-nlp-scientists-in-llm-wave</id><content type="html" xml:base="http://localhost:4000/articles/strategies-for-nlp-scientists-in-llm-wave/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/strategies-for-nlp-scientists-in-llm-wave-47ef25408b6d">Medium</a>.</p>
+
+<blockquote>
+  <p><em>The world of natural language processing (NLP) is rapidly changing with the introduction of large language models (LLMs) like GPT.</em></p>
+</blockquote>
+
+<p><em>In today’s digital world, data is rising at an astonishing rate and is presented in different formats. Business owners are increasingly looking for valuable insights from this data, such as summaries, chatbots, and categorization. To achieve these solutions, NLP scientists have traditionally relied on complex models.</em></p>
+
+<p><em>However, a revolutionary advancement in the field, known as Language Model Machines (LLM), is transforming the landscape and providing a simple yet effective setup. LLM technology has made significant steps in saving time and delivering solutions that were previously only possible with traditional NLP models.</em></p>
+
+<p><em>As a result, the demand for NLP scientists has been reduced, leading to concerns among professionals about job security and the future of their careers. Particularly during a period of layoffs</em></p>
+
+<p><img src="/assets/images/posts/medium/1bfcbecee3e2e4b5.jpg" alt="" /></p>
+
+<p>Photo by <a href="https://unsplash.com/@alvarordesign?utm_source=medium&amp;utm_medium=referral">Alvaro Reyes</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+
+<p><em>So, what can NLP scientists do to navigate these changes and secure their roles in the evolving industry?</em></p>
+
+<p><strong><em>Adapt and Master LLM:</em></strong></p>
+
+<ul>
+  <li><em>The first step is to embrace LLM and become proficient in utilizing its capabilities.</em></li>
+  <li><em>Become proficient in prompt engineering.</em></li>
+  <li><em>Learning the intricacies of this technology will enable NLP scientists to harness its potential and develop innovative solutions.</em></li>
+  <li>Take a look at these helpful links: <a href="https://machinelearningmastery.com/what-are-large-language-models/">https://machinelearningmastery.com/what-are-large-language-models/</a><br />
+<a href="https://python.langchain.com/docs/get_started/introduction.html">https://python.langchain.com/docs/get_started/introduction.html</a></li>
+</ul>
+
+<p><strong><em>Stay Relevant:</em></strong></p>
+
+<ul>
+  <li><em>While LLM may be transforming the landscape, there will always be a need for NLP expertise.</em></li>
+  <li><em>NLP scientists should focus on staying relevant by continuously updating their skills and knowledge in line with the latest developments in the field.</em></li>
+  <li>Take a look at these helpful links: <a href="https://www.youtube.com/@TwoMinutePapers">https://www.youtube.com/@TwoMinutePapers</a><br />
+<a href="https://towardsdatascience.com/">https://towardsdatascience.com/</a><br />
+<a href="https://www.jmlr.org/">https://www.jmlr.org/</a></li>
+</ul>
+
+<p><strong><em>Diversify Skill Set:</em></strong></p>
+
+<ul>
+  <li><em>Instead of relying solely on NLP, consider branching out into other domains like Computer Vision (CV), Time Series Forecasting, and Unsupervised Categorization.</em></li>
+  <li><em>Expanding skill sets allows professionals to tackle a wider range of challenges and increases their versatility in the job market.</em></li>
+  <li>Take a look at these helpful links:<br />
+<a href="https://pyimagesearch.com/">https://pyimagesearch.com/</a><br />
+<a href="https://www.youtube.com/playlist?list=PLl0FT6O_WWDBm-4W-eoK34omYmEMseQDX">https://www.youtube.com/playlist?list=PLl0FT6O_WWDBm-4W-eoK34omYmEMseQDX</a><br />
+<a href="https://scikit-learn.org/stable/unsupervised_learning.html">https://scikit-learn.org/stable/unsupervised_learning.html</a></li>
+</ul>
+
+<p><strong><em>Collaborate and Network:</em></strong></p>
+
+<ul>
+  <li><em>Connect with other professionals in the industry, attend conferences, and participate in online forums.</em></li>
+  <li><em>Collaborating and networking with like-minded individuals can lead to new opportunities and insights.</em></li>
+  <li>Take a look at these helpful links:<br />
+<a href="https://www.linkedin.com/">https://www.linkedin.com/</a><br />
+<a href="https://www.meetup.com/">https://www.meetup.com/</a></li>
+</ul>
+
+<p><strong><em>Adapt to New Architectures and MLOPS:</em></strong></p>
+
+<ul>
+  <li><em>With technology evolving rapidly, it’s crucial to keep up-to-date with the latest architectural advancements.</em></li>
+  <li><em>Staying informed about cutting-edge approaches will enable NLP scientists to deliver superior solutions.</em></li>
+  <li>Take a look at these helpful links:<br />
+<a href="https://ml-ops.org/">https://ml-ops.org/</a><br />
+<a href="https://www.jmlr.org/">https://www.jmlr.org/</a></li>
+</ul>
+
+<p><strong><em>Cost-Cutting Measures:</em></strong></p>
+
+<ul>
+  <li><em>Instead of feeling threatened by LLM’s efficiency, NLP scientists can find ways to use cost-cutting measures in combination with LLM technology.</em></li>
+  <li><em>This way, they can leverage LLM’s advantages while offering specialized expertise for unique projects.</em></li>
+</ul>
+
+<p><em>In conclusion,</em></p>
+
+<p><em>While the rise of LLM may have caused concern among NLP scientists, it is essential to view this transformation as an opportunity for growth and adaptation.</em></p>
+
+<p><em>By embracing LLM, diversifying skill sets, and staying informed about the latest trends, NLP scientists can continue to make valuable contributions in the data-driven world.</em></p>
+
+<p><em>The future lies in the hands of those who are willing to evolve and master new technologies, ensuring that they remain an indispensable part of the industry.</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="llm" /><category term="python" /><category term="data-science" /><category term="machine-learning" /><category term="nlp" /><summary type="html"><![CDATA[The world of natural language processing (NLP) is rapidly changing with the introduction of large language models (LLMs) like GPT. In today’s digital world, data is rising at an…]]></summary></entry><entry><title type="html">Python is good but not everything and for everyone</title><link href="http://localhost:4000/articles/python-is-good-but-not-everything-and-for-everyone/" rel="alternate" type="text/html" title="Python is good but not everything and for everyone" /><published>2023-06-28T00:05:22+05:30</published><updated>2023-06-28T00:05:22+05:30</updated><id>http://localhost:4000/articles/python-is-good-but-not-everything-and-for-everyone</id><content type="html" xml:base="http://localhost:4000/articles/python-is-good-but-not-everything-and-for-everyone/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/python-is-good-but-not-everything-and-for-everyone-f0a1fd455c13">Medium</a>.</p>
+
+<p><img src="/assets/images/posts/medium/d3872b89a04e3a4c.jpg" alt="" /></p>
+
+<p>Photo by <a href="https://unsplash.com/@hiteshchoudhary?utm_source=medium&amp;utm_medium=referral">Hitesh Choudhary</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+
+<p><em>Python is a versatile and powerful programming language that has become increasingly popular in recent years. Its ease of use, readability, and flexibility make it a great choice for a wide range of applications. However, while Python may be good, it is not for everyone and everything.</em></p>
+
+<p><em>One of the main advantages of Python is its simplicity. Python code is easy to read and write, even for beginners. This makes it an ideal choice for learning programming or for rapid prototyping. Additionally, Python’s syntax is concise and intuitive, which reduces the amount of code needed to perform a given task.</em></p>
+
+<p><em>Python is also known for its flexibility. It can be used for a variety of tasks, including web development, data analysis, scientific computing, and artificial intelligence. Its extensive libraries and frameworks make it easy to perform complex operations, and its integration with other programming languages and platforms makes it a powerful tool for cross-functional development.</em></p>
+
+<p><em>However, despite its many advantages,</em></p>
+
+<ul>
+  <li><em>Python may not be the best choice for all programming tasks. <br />
+For example, if performance is a critical factor, other programming languages, such as C or C++, may be better suited.</em></li>
+  <li><em>Python’s interpreted nature means that it can be slower than compiled languages, particularly for computationally intensive tasks.</em></li>
+</ul>
+
+<p><img src="/assets/images/posts/medium/347993c03748dccc.jpg" alt="" /></p>
+
+<p>Photo by <a href="https://unsplash.com/@mattodell?utm_source=medium&amp;utm_medium=referral">Matt ODell</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+
+<ul>
+  <li><em>Python’s simplicity can sometimes be a drawback. While its easy-to-read syntax can be an advantage, it can also lead to less efficient code.</em></li>
+  <li><em>Python’s dynamic typing means that variables can be assigned any type of data, which can cause unexpected behavior and errors if not properly managed.</em></li>
+  <li><em>Another limitation of Python is its lack of support for low-level programming. While Python is a powerful high-level language, it may not be suitable for tasks that require low-level control over hardware or system resources. For these types of tasks, languages such as C or assembly may be more appropriate.</em></li>
+  <li><em>While Python has a large and active community, its popularity can also be a disadvantage. The abundance of libraries and frameworks can be overwhelming for beginners, and choosing the right tools can be a challenge.</em></li>
+</ul>
+
+<p><img src="/assets/images/posts/medium/faa0706a29e51c0d.jpg" alt="" /></p>
+
+<p>Photo by <a href="https://unsplash.com/@jeshoots?utm_source=medium&amp;utm_medium=referral">JESHOOTS.COM</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+
+<ul>
+  <li><em>Additionally, as Python continues to grow in popularity, competition for jobs and resources may increase, making it more difficult to stand out in the field.</em></li>
+</ul>
+
+<p><em>In conclusion,</em></p>
+
+<p><em>Python is a great language for many programming tasks, but it is not for everyone and everything. While its simplicity and flexibility make it an attractive choice for beginners and experienced programmers alike, its limitations should be considered when choosing a language for a particular project. By carefully weighing the pros and cons of Python, developers can make informed decisions about when and where to use this powerful programming language.</em></p>
+
+<p><em>Thank you</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="advantages" /><category term="not" /><category term="everything" /><category term="python" /><category term="disadvantages" /><summary type="html"><![CDATA[Photo by Hitesh Choudhary on Unsplash Python is a versatile and powerful programming language that has become increasingly popular in recent years. Its ease of use, readability, and…]]></summary></entry><entry><title type="html">The Unseen Ego In Developers</title><link href="http://localhost:4000/articles/the-unseen-ego-in-developers/" rel="alternate" type="text/html" title="The Unseen Ego In Developers" /><published>2023-06-10T11:16:58+05:30</published><updated>2023-06-10T11:16:58+05:30</updated><id>http://localhost:4000/articles/the-unseen-ego-in-developers</id><content type="html" xml:base="http://localhost:4000/articles/the-unseen-ego-in-developers/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/the-unseen-ego-in-developers-fe19f3ec59b7">Medium</a>.</p>
+
+<blockquote>
+  <p>How Unseen Ego Affects Software Development</p>
+</blockquote>
+
+<p><em>In the field of software development, there is an interesting phenomenon known as the</em> <strong><em>“UNSEEN EGO.”</em></strong> <em>It refers to the unconscious thoughts, biases, and tendencies that developers may possess without being fully aware of them. These hidden egos can have a significant influence on their work and the overall development process.</em></p>
+
+<p><strong><em>Confirmation Bias:</em></strong><em>Developers often have a natural inclination to seek out information that aligns with their own ideas and opinions while disregarding opposing viewpoints. This narrow perspective can limit their understanding of alternative approaches and hinder their willingness to explore more innovative and productive techniques.</em></p>
+
+<p><strong><em>Attachment to Work:</em></strong><em>Developers frequently develop strong emotional attachments to the code they produce, perceiving it as a personal creation. Consequently, when others suggest modifications or point out flaws, they might react defensively or become upset. This emotional connection can make it difficult for engineers to accept constructive criticism or make necessary changes.</em></p>
+
+<p><strong><em>Resistance to Change:</em></strong><em>Change is an inevitable part of the software development industry, but some engineers struggle to embrace it. The prospect of learning new things or feeling uncertain about their knowledge can lead to resistance and hesitation. This resistance, in turn, makes them less open to new ideas, technologies, or methodologies, impeding innovation and growth.</em></p>
+
+<p><strong><em>Competitive Mindset:</em></strong><em>For certain developers, software development has become a highly competitive field where they constantly strive to outperform their peers. This competitive attitude can hinder collaboration and open-mindedness. They may be reluctant to consider opposing viewpoints or explore alternative solutions as they seek to establish their superiority.</em></p>
+
+<p><strong><em>Unconscious Biases:</em></strong><em>Developers, like everyone else, have biases and preferences that they may not be consciously aware of. These hidden biases can subtly influence their decision-making processes and actions. Unconscious biases can lead to unequal treatment of ideas, people, or technologies, thereby hindering the creation of an inclusive work environment.</em></p>
+
+<p><em>Understanding and addressing these invisible egos is crucial for fostering a collaborative and innovative software development culture. Developers who recognize these tendencies can strive to be more open-minded, receptive to feedback, and inclusive in their approach. Continuous learning and embracing diverse perspectives can contribute to the development of high-quality software that meets the needs of a broad user base.</em></p>]]></content><author><name>Akshay Mewada</name></author><summary type="html"><![CDATA[How Unseen Ego Affects Software Development In the field of software development, there is an interesting phenomenon known as the “UNSEEN EGO.” It refers to the unconscious thoughts,…]]></summary></entry><entry><title type="html">Indian Freshers should Initially avoid Data Science as Career.</title><link href="http://localhost:4000/articles/indian-freshers-should-initially-avoid-data-science-as-career/" rel="alternate" type="text/html" title="Indian Freshers should Initially avoid Data Science as Career." /><published>2023-06-01T23:32:37+05:30</published><updated>2023-06-01T23:32:37+05:30</updated><id>http://localhost:4000/articles/indian-freshers-should-initially-avoid-data-science-as-career</id><content type="html" xml:base="http://localhost:4000/articles/indian-freshers-should-initially-avoid-data-science-as-career/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/indian-freshers-should-initially-avoid-data-science-as-career-a03a890ac7f0">Medium</a>.</p>
+
+<blockquote>
+  <p><em>Data Science has become a buzzword in the job market, and it is considered one of the most sought-after career options.</em></p>
+</blockquote>
+
+<p><em>With the rise of Big Data, many young professionals are drawn toward data science as a career choice. <br />
+However, Indian freshers should initially avoid Data Science as a career for several reasons.</em></p>
+
+<ul>
+  <li>Skillset for Data Science</li>
+  <li>Challenging Job Market</li>
+  <li>Understanding Business Context</li>
+</ul>
+
+<p><strong>Skillset for Data Science</strong></p>
+
+<ul>
+  <li><em>Data Science requires a specific skill set that may not be available to Indian freshers.</em></li>
+  <li><em>It demands expertise in mathematics, statistics, computer science, and programming languages like Python and R.</em></li>
+  <li><em>While some Indian graduates may possess these skills, many do not have the required knowledge to pursue a career in Data Science.</em></li>
+</ul>
+
+<p><strong>Challenging Job Market</strong></p>
+
+<ul>
+  <li><em>The job market for Data Science in India is competitive, and the demand for experienced professionals is high.</em></li>
+  <li><em>With so many experienced professionals in the market, it may be challenging for Indian freshers to find entry-level positions in Data Science.</em></li>
+  <li><em>Companies usually prefer experienced candidates who can deliver results from the start.</em></li>
+</ul>
+
+<p><strong>Education and Exposure</strong></p>
+
+<ul>
+  <li><em>The Indian education system may not provide the necessary exposure to Data Science.</em></li>
+  <li><em>The curriculum of most Indian colleges is outdated and does not provide hands-on experience with the tools and technologies used in the industry.</em></li>
+  <li><em>This lack of exposure can be a significant disadvantage for an Indian fresher who wants to pursue a career in Data Science.</em></li>
+</ul>
+
+<p><strong>Understanding Business Context</strong></p>
+
+<ul>
+  <li><em>Indian freshers may face difficulty in understanding the business context of data science.</em></li>
+  <li><em>Data Science is not only about crunching numbers and writing code but also about understanding the business problem and providing a solution.</em></li>
+  <li><em>Indian freshers may lack the experience and skills to translate business problems into data science solutions.</em></li>
+</ul>
+
+<p><strong><em>While Data Science is an exciting career option, Indian freshers should initially avoid it.</em></strong></p>
+
+<ul>
+  <li><em>Instead, they should focus on building a strong foundation in mathematics, statistics, and computer science.</em></li>
+  <li><em>They should also gain practical experience by working on projects, participating in hackathons, and attending workshops.</em></li>
+  <li><em>Once they have gained the necessary skills and experience, they can consider pursuing a career in Data Science.</em></li>
+</ul>
+
+<p><em>By doing so, Indian fresher will increase their chances of success in the Data Science job market.</em></p>
+
+<p><em>Thank you !!!</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="freshers" /><category term="machine-learning" /><category term="python" /><category term="data-science" /><category term="india" /><summary type="html"><![CDATA[Data Science has become a buzzword in the job market, and it is considered one of the most sought-after career options. With the rise of Big Data, many young professionals are drawn…]]></summary></entry><entry><title type="html">Data Science Course Has Become “CULT” In India.</title><link href="http://localhost:4000/articles/data-science-course-has-become-cult-in-india/" rel="alternate" type="text/html" title="Data Science Course Has Become “CULT” In India." /><published>2023-02-28T15:03:04+05:30</published><updated>2023-02-28T15:03:04+05:30</updated><id>http://localhost:4000/articles/data-science-course-has-become-cult-in-india</id><content type="html" xml:base="http://localhost:4000/articles/data-science-course-has-become-cult-in-india/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/data-science-course-has-become-cult-in-india-bf69bc9c8031">Medium</a>.</p>
+
+<p><img src="/assets/images/posts/medium/63209d4415ec8a8d.png" alt="" /></p>
+
+<h3 id="how-it-becomes-acult"><strong><em>How it becomes a cult?</em></strong></h3>
+
+<p>Data science has become a cult for several reasons.</p>
+
+<ul>
+  <li><em>The rise of big data and artificial intelligence has created a sense of excitement and wonder about the potential of data-driven insights.</em></li>
+  <li><em>This has created a buzz around data science, with individuals and businesses keen to get in on the action.</em></li>
+  <li><em>This excitement has contributed to the formation of a cult-like culture around data science, with individuals and organizations eager to be part of the</em> <strong><em>“in-crowd”</em></strong> <em>and exhibit their expertise and talents in India.</em></li>
+  <li><em>In India Data science courses have become popular due to the perceived high demand for data scientists in the job market.</em></li>
+  <li><em>This has resulted in an explosion of courses and programmes that claim to offer students the skills required to excel in the sector.</em></li>
+  <li><em>The competition among these courses has led to a focus on flashy marketing and self-promotion, further contributing to the development of a cult-like culture.</em></li>
+  <li><em>Data science courses often teach students to rely on pre-packaged tools and algorithms without a deep understanding of how they work or their limitations.</em></li>
+</ul>
+
+<h4 id="impact-ofcult"><strong>Impact Of Cult</strong></h4>
+
+<p><img src="/assets/images/posts/medium/583d6cc18a252611.gif" alt="Animated illustration" /></p>
+
+<p><strong>Lack of Focus:</strong> <br />
+<em>Many data science courses try to cover a broad range of topics, including statistics, machine learning, and data visualization. As a result, programming concepts are often only briefly touched upon, with little attention given to the fundamentals.</em></p>
+
+<p><strong>Incomplete Coverage:</strong> <br />
+<em>Some data science courses may cover programming basics, such as loops and conditional statements, but fail to delve deeper into more advanced topics like data structures, algorithms, and debugging techniques.</em></p>
+
+<p><strong>Insufficient Feedback:</strong> <br />
+<em>Without sufficient feedback on their coding practices, students may not develop good coding habits, leading to errors and inefficiencies in their code.</em></p>
+
+<p><strong>Lack of Personalization:</strong> <br />
+<em>Data science courses are often taught as one-size-fits-all programs, with little consideration for individual student needs. As a result, students with little or no programming experience may struggle to keep up, while more advanced students may feel bored or unchallenged.</em></p>
+
+<p><strong>Insufficient Time:</strong> <br />
+<em>Many data science courses are designed to be completed within a short period, such as a few months or even weeks. This limited time frame can make it difficult for instructors to cover programming concepts in sufficient depth.</em></p>
+
+<h4 id="how-to-stay-away-from-the-cult-trap-and-become-data-scientist"><em>How to stay away from the cult trap and become Data Scientist?</em></h4>
+
+<p><img src="/assets/images/posts/medium/d6ce459f287ee952.gif" alt="Animated illustration" /></p>
+
+<p><strong>Understanding Programming Concepts:</strong><em>Start by learning the basics of programming languages such as Python or R. <br />
+Focus on building a strong foundation in programming concepts such as loops, functions, and conditional statements. <br />
+Learn how to manipulate data using libraries like NumPy and Pandas, and explore visualization tools like Matplotlib or Seaborn. <br />
+Once you have a solid foundation, you can move on to more advanced topics such as object-oriented programming, algorithms, and data structures.</em></p>
+
+<p><strong>Understanding AI / ML concepts:</strong><em>Start by learning the basics of statistics and probability theory. Familiarize yourself with machine learning models such as linear regression, decision trees, and clustering algorithms. <br />
+Learn how to train and evaluate models using frameworks like Scikit-learn or TensorFlow. <br />
+Get hands-on experience by working on real-world projects or participating in online competitions.</em></p>
+
+<p><strong>Understanding Business Problems:</strong><em>A data scientist should have a deep understanding of the business problem they are trying to solve. <br />
+This requires good communication skills, an ability to ask the right questions, and a willingness to collaborate with stakeholders. <br />
+Start by learning about the industry you want to work in, and the challenges it faces. <br />
+Read case studies and industry reports, and attend conferences or meetups related to your area of interest. <br />
+Develop a business mindset and understand how to frame problems in a way that adds value to the organization.</em></p>
+
+<p><strong>Understanding Customer Market:</strong><em>To be a successful data scientist, you need to understand the customer market. This means understanding the needs and preferences of the end-users, as well as the competition. <br />
+Start by researching the target audience, their demographics, and their behavior. Learn about market trends and analyze customer feedback. <br />
+Use this information to inform your data-driven decisions and help your organization make informed decisions.</em></p>
+
+<p><em>Thank you !!!</em></p>]]></content><author><name>Akshay Mewada</name></author><category term="artificial-intelligence" /><category term="machine-learning" /><category term="python" /><category term="data-science" /><category term="deep-learning" /><summary type="html"><![CDATA[How it becomes a cult? Data science has become a cult for several reasons. The rise of big data and artificial intelligence has created a sense of excitement and wonder about the…]]></summary></entry><entry><title type="html">Full Stack Machine Learning</title><link href="http://localhost:4000/posts/2020/08/fullstack-machine-learning" rel="alternate" type="text/html" title="Full Stack Machine Learning" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>http://localhost:4000/posts/2020/08/fullstack-machine-learning</id><content type="html" xml:base="http://localhost:4000/posts/2020/08/fullstack-machine-learning"><![CDATA[<p class="article-subtitle">After Data Scientist a Full-stack machine learning developer is the most trending job.</p>
 
 <p><strong>Originally posted on:</strong> <a href="https://medium.com/@akshaymewada/full-stack-machine-learning-developer-c67c266080a5">Medium</a></p>
 
@@ -132,4 +502,289 @@
 
 <p>After reading this article I am sure you have an overview of Full-stack ML developer stack.</p>
 
-<p>Thank You !!!</p>]]></content><author><name>Akshay Mewada</name></author><category term="machine learning" /><category term="full stack" /><category term="python" /><category term="data science" /><category term="artificial intelligence" /><summary type="html"><![CDATA[After Data Scientist a Full-stack machine learning developer is the most trending job.]]></summary></entry></feed>
+<p>Thank You !!!</p>]]></content><author><name>Akshay Mewada</name></author><category term="machine learning" /><category term="full stack" /><category term="python" /><category term="data science" /><category term="artificial intelligence" /><summary type="html"><![CDATA[After Data Scientist a Full-stack machine learning developer is the most trending job.]]></summary></entry><entry><title type="html">Host Flask and Django Web Application wit windows IIS FastCGI</title><link href="http://localhost:4000/articles/host-flask-and-django-web-application-wit-windows-iis-fastcgi/" rel="alternate" type="text/html" title="Host Flask and Django Web Application wit windows IIS FastCGI" /><published>2020-05-16T19:31:00+05:30</published><updated>2020-05-16T19:31:00+05:30</updated><id>http://localhost:4000/articles/host-flask-and-django-web-application-wit-windows-iis-fastcgi</id><content type="html" xml:base="http://localhost:4000/articles/host-flask-and-django-web-application-wit-windows-iis-fastcgi/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/host-flask-and-django-web-application-wit-windows-iis-fastcgi-df7c9f4669d">Medium</a>.</p>
+
+<h4 id="internet-information-servicesiis-is-a-software-package-tool-for-hosting-websites">Internet Information Services(IIS) is a software package tool for hosting websites.</h4>
+
+<h3 id="fastcgi">FastCGI</h3>
+
+<p><em>FastCGI provides high-performance interfacing between the web server and CGI programs, which allows the server to handle more requests.</em></p>
+
+<p><em>To access the</em> <strong><em>FastCGI</em></strong> <em>module, enable</em> <strong><em>CGI</em></strong><em>Feature.</em></p>
+
+<p><em>In Windows 7,8,10</em></p>
+
+<ol>
+  <li><em>Open</em> <strong><em>Turn Windows features on or off.</em></strong></li>
+  <li><em>Click on IIS -&gt; World Wide Web -&gt; Application Development Features-&gt; CGI . This will on both</em> <strong><em>CGI</em></strong> <em>and</em> <strong><em>FastCGI</em></strong><em>modules.</em></li>
+</ol>
+
+<p><img src="/assets/images/posts/medium/f872117867d58f84.png" alt="" /></p>
+
+<p><em>IIS Window Add Website</em></p>
+
+<p><em>In Windows Server</em></p>
+
+<ol>
+  <li><em>On the taskbar, click</em> <strong><em>Server Manager</em></strong><em>.</em></li>
+  <li><em>In</em> <strong><em>Server Manager</em></strong><em>, click the</em> <strong><em>Manage</em></strong> <em>menu, and then click</em> <strong><em>Add Roles and Features</em></strong><em>.</em></li>
+  <li><em>In the</em> <strong><em>Add Roles and Features</em></strong> <em>wizard, click</em> <strong><em>Next</em></strong><em>. Select the installation type and click</em> <strong><em>Next</em></strong><em>. Select the destination server and click</em><strong><em>Next</em></strong><em>.</em></li>
+  <li><em>On the</em> <strong><em>Server Roles</em></strong> <em>page, expand</em> <strong><em>Web Server (IIS)</em></strong><em>, expand</em> <strong><em>Web Server</em></strong><em>, expand</em> <strong><em>Application Development</em></strong><em>, and then select</em> <strong><em>CGI</em></strong><em>. Click</em><strong><em>Next</em></strong><em>.</em></li>
+</ol>
+
+<p><em>Let us configure wfastcgi to host python web apps using IIS FastCGI</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install wfastcgi
+</code></pre></div></div>
+
+<p><em>Enable the wfastcgi access by the below command.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfastcgj-enable
+</code></pre></div></div>
+
+<p><em>This will provide you access to the script processor. for eg.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c:\users\user\appdata\local\programs\python\python36\python.exe|c:\users\user\appdata\local\programs\python\python36\lib\site-packages\wfastcgi.pyFlask APP with FastCGI
+</code></pre></div></div>
+
+<h4 id="flask-app-withfastcgi">Flask App With FastCGI</h4>
+
+<ul>
+  <li>Let’s create a module handler for the flask app using FastCGI.</li>
+</ul>
+
+<p><img src="/assets/images/posts/medium/81328f5541124d85.png" alt="" /></p>
+
+<ul>
+  <li><em>To avoid all manual process add below web.config to the flask app directory or you can</em><a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/"><em>refer</em></a></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;configuration&gt;  
+  &lt;system.webServer&gt;  
+    &lt;handlers&gt;  
+      &lt;add name="Python FastCGI"  
+           path="*"  
+           verb="*"  
+           modules="FastCgiModule"          scriptProcessor="c:\users\user\appdata\local\programs\python\python36\python.exe|c:\users\user\appdata\local\programs\python\python36\lib\site-packages\wfastcgi.py"  
+           resourceType="Unspecified"  
+           requireAccess="Script" /&gt;  
+    &lt;/handlers&gt;  
+  &lt;/system.webServer&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;appSettings&gt;  
+    &lt;!-- Required settings --&gt;  
+    &lt;add key="WSGI_HANDLER" value="run.app" /&gt;  
+    &lt;add key="PYTHONPATH" value="C:\flaskapi"/&gt;  
+  &lt;/appSettings&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong><em>Let us understand the web.config of FastCGI.</em></strong></p>
+
+<ol>
+  <li><em>The handlers are the main component of FastCGI module mapping for the current website.</em></li>
+  <li><em>The</em> <strong><em>scriptProcessor</em></strong> <em>is the key to run your WSGI application. For eg. in the flask defined app is your WSGI application.</em></li>
+  <li><em>This handler will process your web application.</em></li>
+  <li><em>The appSettings is are get translated to the environment variable to run the application.</em></li>
+  <li><em>PYTONPATH is the physical path to your flaskapp.</em></li>
+  <li><em>WSGI_HANLER is the WSGI app. As shown above web.config in flaskapp run.py is accessed as run.app so</em> <strong><em>scriptProcessor</em></strong> <em>can access it.</em></li>
+  <li><em>For more detailed configuration.</em> <a href="https://pypi.org/project/wfastcgi/"><em>here</em></a></li>
+</ol>
+
+<p><img src="/assets/images/posts/medium/00dd48fb27b89e88.png" alt="" /></p>
+
+<p><em>flaskapp</em></p>
+
+<p><em>In the configuration editor, you will find the below details</em>.</p>
+
+<p><img src="/assets/images/posts/medium/50dfe6195ecdbb4c.png" alt="" /></p>
+
+<p><em>If you didn’t found configuration or it is throwing an error of web.config. Please check the web.config file. To check it and troubleshoot it in detail the references are shown at the end of the post.</em></p>
+
+<p><em>After successful configuration, If you run your web application at this point it will throw access denied error because the flaskapp application has no permission to access the folder.</em></p>
+
+<p><strong><em>Add Permission</em></strong> <em>to</em> <strong><em>Flask Application</em></strong> <em>and</em> <strong><em>Python folder</em></strong> <em>where your executable is present.</em></p>
+
+<ol>
+  <li><em>Open folder properties.</em></li>
+  <li><em>In Security click on Edit then click on Add</em></li>
+  <li><em>Enter object name as IIS AppPool&lt;yourappname&gt;</em></li>
+  <li><em>Click on the check name if its present click ok and allow permissions you wanted to give then apply it.</em></li>
+  <li><em>This link will help you with permissions.</em> <a href="https://stackoverflow.com/questions/14934006/iis-iusrs-and-iusr-permissions-in-iis8"><em>here</em></a><em>.</em></li>
+</ol>
+
+<p><strong><em>Run your application</em></strong></p>
+
+<p><em>Click on the website added in Sites. Go to manage website click on start to run your application.</em></p>
+
+<h4 id="django-app-withfastcgi"><em>Django App With FastCGI</em></h4>
+
+<ul>
+  <li><em>Add web.config file to the path of the Django application.</em></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;configuration&gt;  
+  &lt;system.webServer&gt;  
+    &lt;handlers&gt;  
+      &lt;add name="Python FastCGI"  
+           path="*"  
+           verb="*"  
+           modules="FastCgiModule"         scriptProcessor="C:\Python36\python.exe|C:\Python36\Lib\site-packages\wfastcgi.py"  
+           resourceType="Unspecified"  
+           requireAccess="Script" /&gt;  
+    &lt;/handlers&gt;  
+  &lt;/system.webServer&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;appSettings&gt;  
+    &lt;!-- Required settings --&gt;  
+    &lt;add key="WSGI_HANDLER" value="myweb.wsgi.application" /&gt;  
+    &lt;add key="PYTHONPATH" value="C:\MyWebApp" /&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;!-- Optional settings --&gt;  
+    &lt;add key="WSGI_LOG" value="C:\Logs\my_app.log" /&gt;  
+  &lt;/appSettings&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><em>Here the</em> <strong><em>WSGI_HANDLER</em></strong> <em>value is the same as</em> <strong><em>WSGI_APPLICATION</em></strong> <em>value defined in setting.py of Django application.</em></li>
+  <li><em>Follow the same procedure of flask application with FastCGI to make the Django application running.</em></li>
+</ul>
+
+<h4 id="references">References:</h4>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/"><em>https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/</em></a></li>
+  <li><a href="https://docs.microsoft.com/en-us/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2019"><em>https://docs.microsoft.com/en-us/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2019</em></a></li>
+  <li><a href="https://pypi.org/project/wfastcgi/"><em>https://pypi.org/project/wfastcgi/</em></a></li>
+</ul>]]></content><author><name>Akshay Mewada</name></author><category term="isis" /><category term="django" /><category term="flask" /><category term="fastcgi" /><category term="deployment" /><summary type="html"><![CDATA[Internet Information Services(IIS) is a software package tool for hosting websites. FastCGI FastCGI provides high-performance interfacing between the web server and CGI programs, which…]]></summary></entry><entry><title type="html">Host Flask and Django Web Application with windows IIS HttpPlatformHanlder</title><link href="http://localhost:4000/articles/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder/" rel="alternate" type="text/html" title="Host Flask and Django Web Application with windows IIS HttpPlatformHanlder" /><published>2020-05-16T19:01:00+05:30</published><updated>2020-05-16T19:01:00+05:30</updated><id>http://localhost:4000/articles/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder</id><content type="html" xml:base="http://localhost:4000/articles/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder/"><![CDATA[<p>Originally published on <a href="https://akshaymewada.medium.com/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder-83e831ce91bc">Medium</a>.</p>
+
+<h4 id="internet-information-servicesiis-is-a-software-package-tool-for-hosting-websites">Internet Information Services(IIS) is a software package tool for hosting websites.</h4>
+
+<blockquote>
+  <p>Microsoft has made web hosting simpler by providing Internet Information Services(IIS) Software on Windows Server/System.</p>
+</blockquote>
+
+<p>IIS provides many features for hosting web applications. Python web app can be hosted by two features <strong><em>Httpplatformhandler</em></strong> and <strong><em>FastCGI</em></strong>.</p>
+
+<p>In this post, we will host a Flask and Django web application using these two features.</p>
+
+<p><img src="/assets/images/posts/medium/ad95eb50e377181b.png" alt="" />
+<img src="/assets/images/posts/medium/2f52553eca4eac1c.png" alt="" /></p>
+
+<p>IIS Window and Add website</p>
+
+<p>For <strong><em>Flask</em></strong> physical path is a path to <strong><em>app.py</em></strong> of your application. <br />
+For <strong><em>Django</em></strong> physical path is a path to <strong><em>manage.py</em></strong> of your application.</p>
+
+<p>Let’s configure Handler Mapping for Website.</p>
+
+<h3 id="httpplatformhandler">Httpplatformhandler</h3>
+
+<p><strong><em>Httpplatoformhandler</em></strong> manages any process like(Java, Ruby, Python, etc.) that can listen on Port for HTTP requests.</p>
+
+<p>Download and Install <strong><em>Httpplatformhandler</em></strong> on IIS using <strong><em>Windows Platform Installer</em>.</strong> or <a href="https://www.iis.net/downloads/microsoft/httpplatformhandler">here</a>.</p>
+
+<h4 id="flask-app-with-httpplatformhandler">Flask APP with Httpplatformhandler</h4>
+
+<ul>
+  <li>Add web.config where your flask is defined.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;  
+&lt;configuration&gt;  
+    &lt;system.webServer&gt;  
+        &lt;handlers&gt;  
+            &lt;add name="httpplatformhandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified" requireAccess="Script" /&gt;  
+        &lt;/handlers&gt;  
+        &lt;httpPlatform startupTimeLimit="10" startupRetryCount="10" stdoutLogEnabled="true" processPath="C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe" arguments="app.py"&gt;  
+            &lt;environmentVariables&gt;  
+                &lt;environmentVariable name="foo" value="bar"/&gt;  
+            &lt;/environmentVariables&gt;  
+        &lt;/httpPlatform&gt;  
+    &lt;/system.webServer&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong>Let us understand the web.config of <em>httpplatformhanlder</em>.</strong></p>
+
+<ol>
+  <li><strong>httpPlaform</strong> is handling the Python process.</li>
+  <li>As mentioned <strong>processPath</strong> is a physical path to python executable.</li>
+  <li>Just like you provide python path in a windows environment variable. To access the python executable. Here you have to provide <strong><em>python.exe</em></strong> in <strong>processPath</strong>.</li>
+  <li><strong>arguments</strong> are the same argument you pass running any python web application. For eg. python <strong><em>app.py -p 5005</em></strong> where app.py to port number all are arguments. In the above application, <strong><em>app.py</em></strong> is passed to run flask application.</li>
+  <li>For more configuration details <a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference"><strong><em>here</em></strong></a><strong><em>.</em></strong></li>
+</ol>
+
+<p>Check the handler is selected perfectly after above web.config is added to flaskapp folder.</p>
+
+<p><img src="/assets/images/posts/medium/00dd48fb27b89e88.png" alt="" /></p>
+
+<p>flaskapp website</p>
+
+<p>In the configuration editor, you will find the below details.</p>
+
+<p><img src="/assets/images/posts/medium/73ae94c45e6e93b6.png" alt="" /></p>
+
+<p>check configuration</p>
+
+<p>If you didn’t found configuration or it is throwing an error of web.config. Please check the web.config file. To check it and troubleshoot it in detail the references are shown at the end of the post.</p>
+
+<p>After successful configuration, If you run your web application at this point it will throw access denied error because the flaskapp application has no permission to access the folder.</p>
+
+<p><strong>Add Permission</strong> to <strong>Flask Application</strong> and <strong>Python folder</strong> where your executable is present.</p>
+
+<ol>
+  <li>Open folder properties.</li>
+  <li>In Security click on Edit then click on Add</li>
+  <li>Enter object name as IIS AppPool&lt;yourappname&gt;</li>
+  <li>Click on the check name if its present click ok and allow permissions you wanted to give then apply it.</li>
+  <li>This link will help you with permissions. <a href="https://stackoverflow.com/questions/14934006/iis-iusrs-and-iusr-permissions-in-iis8">here</a>.</li>
+</ol>
+
+<p><strong>Run your application</strong></p>
+
+<h4 id="django-app-with-httpplatformhandler">Django APP with Httpplatformhandler</h4>
+
+<ul>
+  <li>Add web.config where your Django app is defined.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;  
+&lt;configuration&gt;  
+    &lt;system.webServer&gt;  
+        &lt;handlers&gt;  
+            &lt;add name="httpplatformhandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified" requireAccess="Script" /&gt;  
+        &lt;/handlers&gt;  
+        &lt;httpPlatform startupTimeLimit="10" startupRetryCount="10" stdoutLogEnabled="true" processPath="C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe" arguments="manage.py runserver"&gt;  
+            &lt;environmentVariables&gt;  
+                &lt;environmentVariable name="foo" value="bar"/&gt;  
+            &lt;/environmentVariables&gt;  
+        &lt;/httpPlatform&gt;  
+    &lt;/system.webServer&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong>Let us understand the web.config of <em>httpplatformhanlder</em>.</strong></p>
+
+<ol>
+  <li>The <strong>processPath</strong> is the same as <strong>python.exe</strong> as explained in the flask app.</li>
+  <li><strong>arguments</strong> are the same argument you pass running any python web application. For eg. python <strong>manage.py runserver</strong> where app.py to port number all are arguments. In the above application, <strong><em>manage.py runserver</em></strong> is passed to run flask application.</li>
+  <li>For more configuration <a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference"><strong><em>here</em></strong></a><strong><em>.</em></strong></li>
+</ol>
+
+<p><strong>Add Permission</strong> to <strong>Django Application</strong> and <strong>Python folder</strong> where your executable is present.</p>
+
+<p><strong>Run your application</strong></p>
+
+<p><a href="https://medium.com/@akshay.mewada7/host-flask-and-django-web-application-wit-windows-iis-fastcgi-df7c9f4669d">The next section of the post is Host Flask and Django Web Application wit windows IIS FastCGI.</a></p>
+
+<h3 id="references">References:</h3>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference">https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference</a></li>
+  <li><a href="https://forums.iis.net/t/1232188.aspx?HttpPlatformHandler+Python+Flask+Tornado+">https://forums.iis.net/t/1232188.aspx?HttpPlatformHandler+Python+Flask+Tornado+</a></li>
+</ul>]]></content><author><name>Akshay Mewada</name></author><category term="flask" /><category term="httpplatformhandler" /><category term="django" /><category term="deployment" /><category term="isis" /><summary type="html"><![CDATA[Internet Information Services(IIS) is a software package tool for hosting websites. Microsoft has made web hosting simpler by providing Internet Information Services(IIS) Software on…]]></summary></entry></feed>

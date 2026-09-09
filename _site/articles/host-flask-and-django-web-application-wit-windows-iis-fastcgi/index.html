@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Host Flask and Django Web Application wit windows IIS FastCGI · Akshay Mewada</title>
+  <meta name="description"
+    content="Internet Information Services(IIS) is a software package tool for hosting websites. FastCGI FastCGI provides high-performance interfacing between the web server and CGI programs, which…">
+  <link rel="canonical" href="http://localhost:4000/articles/host-flask-and-django-web-application-wit-windows-iis-fastcgi/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Akshay Mewada" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Akshay Mewada<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        
+        
+        <a href="/" >About</a>
+        
+        
+        
+        <a href="/articles/"  aria-current="page" >Posts</a>
+        
+        
+        
+        <details class="nav-dropdown">
+          <summary>Notes</summary>
+          <ul class="nav-submenu">
+            
+            <li><a href="/articles/text-search/" >Text Searches</a></li>
+            
+          </ul>
+        </details>
+        
+        
+        
+        <a href="/games/" >Play</a>
+        
+        
+        
+        <a href="/files/resume.pdf" >Resume</a>
+        
+        
+      </nav>
+      <div class="site-search" role="search" data-index="/search.json">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="site-search-input" type="search" aria-label="Search posts, labs, and games" placeholder="Search…" autocomplete="off" aria-controls="site-search-results">
+        <div class="search-panel" hidden>
+          <p class="search-status" role="status" aria-live="polite"></p>
+          <ul id="site-search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="site-grid">
+    <aside class="profile" aria-label="Author profile">
+      <img src="/assets/images/profile.jpg" alt="Akshay Mewada" width="88" height="88">
+      <p class="profile-name">Akshay Mewada</p>
+      <p class="bio-title">Software Engineer</p>
+      <p class="bio-subtitle">Automate When It Makes Sense</p>
+      <!-- <p class="location">Mumbai, India</p> -->
+      <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+    </aside>
+    <main id="content" tabindex="-1"><article>
+  <a class="back-link" href="/articles/">← All articles</a>
+  <header class="post-header">
+    <p class="eyebrow">Field notes</p>
+    <h1>Host Flask and Django Web Application wit windows IIS FastCGI</h1>
+    
+    <p class="meta"><time datetime="2020-05-16T19:31:00+05:30">May 16, 2020</time> ·
+      3 min read</p>
+  </header>
+  <div class="prose"><p>Originally published on <a href="https://akshaymewada.medium.com/host-flask-and-django-web-application-wit-windows-iis-fastcgi-df7c9f4669d">Medium</a>.</p>
+
+<h4 id="internet-information-servicesiis-is-a-software-package-tool-for-hosting-websites">Internet Information Services(IIS) is a software package tool for hosting websites.</h4>
+
+<h3 id="fastcgi">FastCGI</h3>
+
+<p><em>FastCGI provides high-performance interfacing between the web server and CGI programs, which allows the server to handle more requests.</em></p>
+
+<p><em>To access the</em> <strong><em>FastCGI</em></strong> <em>module, enable</em> <strong><em>CGI</em></strong><em>Feature.</em></p>
+
+<p><em>In Windows 7,8,10</em></p>
+
+<ol>
+  <li><em>Open</em> <strong><em>Turn Windows features on or off.</em></strong></li>
+  <li><em>Click on IIS -&gt; World Wide Web -&gt; Application Development Features-&gt; CGI . This will on both</em> <strong><em>CGI</em></strong> <em>and</em> <strong><em>FastCGI</em></strong><em>modules.</em></li>
+</ol>
+
+<p><img src="/assets/images/posts/medium/f872117867d58f84.png" alt="" /></p>
+
+<p><em>IIS Window Add Website</em></p>
+
+<p><em>In Windows Server</em></p>
+
+<ol>
+  <li><em>On the taskbar, click</em> <strong><em>Server Manager</em></strong><em>.</em></li>
+  <li><em>In</em> <strong><em>Server Manager</em></strong><em>, click the</em> <strong><em>Manage</em></strong> <em>menu, and then click</em> <strong><em>Add Roles and Features</em></strong><em>.</em></li>
+  <li><em>In the</em> <strong><em>Add Roles and Features</em></strong> <em>wizard, click</em> <strong><em>Next</em></strong><em>. Select the installation type and click</em> <strong><em>Next</em></strong><em>. Select the destination server and click</em><strong><em>Next</em></strong><em>.</em></li>
+  <li><em>On the</em> <strong><em>Server Roles</em></strong> <em>page, expand</em> <strong><em>Web Server (IIS)</em></strong><em>, expand</em> <strong><em>Web Server</em></strong><em>, expand</em> <strong><em>Application Development</em></strong><em>, and then select</em> <strong><em>CGI</em></strong><em>. Click</em><strong><em>Next</em></strong><em>.</em></li>
+</ol>
+
+<p><em>Let us configure wfastcgi to host python web apps using IIS FastCGI</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install wfastcgi
+</code></pre></div></div>
+
+<p><em>Enable the wfastcgi access by the below command.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfastcgj-enable
+</code></pre></div></div>
+
+<p><em>This will provide you access to the script processor. for eg.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c:\users\user\appdata\local\programs\python\python36\python.exe|c:\users\user\appdata\local\programs\python\python36\lib\site-packages\wfastcgi.pyFlask APP with FastCGI
+</code></pre></div></div>
+
+<h4 id="flask-app-withfastcgi">Flask App With FastCGI</h4>
+
+<ul>
+  <li>Let’s create a module handler for the flask app using FastCGI.</li>
+</ul>
+
+<p><img src="/assets/images/posts/medium/81328f5541124d85.png" alt="" /></p>
+
+<ul>
+  <li><em>To avoid all manual process add below web.config to the flask app directory or you can</em><a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/"><em>refer</em></a></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;configuration&gt;  
+  &lt;system.webServer&gt;  
+    &lt;handlers&gt;  
+      &lt;add name="Python FastCGI"  
+           path="*"  
+           verb="*"  
+           modules="FastCgiModule"          scriptProcessor="c:\users\user\appdata\local\programs\python\python36\python.exe|c:\users\user\appdata\local\programs\python\python36\lib\site-packages\wfastcgi.py"  
+           resourceType="Unspecified"  
+           requireAccess="Script" /&gt;  
+    &lt;/handlers&gt;  
+  &lt;/system.webServer&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;appSettings&gt;  
+    &lt;!-- Required settings --&gt;  
+    &lt;add key="WSGI_HANDLER" value="run.app" /&gt;  
+    &lt;add key="PYTHONPATH" value="C:\flaskapi"/&gt;  
+  &lt;/appSettings&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong><em>Let us understand the web.config of FastCGI.</em></strong></p>
+
+<ol>
+  <li><em>The handlers are the main component of FastCGI module mapping for the current website.</em></li>
+  <li><em>The</em> <strong><em>scriptProcessor</em></strong> <em>is the key to run your WSGI application. For eg. in the flask defined app is your WSGI application.</em></li>
+  <li><em>This handler will process your web application.</em></li>
+  <li><em>The appSettings is are get translated to the environment variable to run the application.</em></li>
+  <li><em>PYTONPATH is the physical path to your flaskapp.</em></li>
+  <li><em>WSGI_HANLER is the WSGI app. As shown above web.config in flaskapp run.py is accessed as run.app so</em> <strong><em>scriptProcessor</em></strong> <em>can access it.</em></li>
+  <li><em>For more detailed configuration.</em> <a href="https://pypi.org/project/wfastcgi/"><em>here</em></a></li>
+</ol>
+
+<p><img src="/assets/images/posts/medium/00dd48fb27b89e88.png" alt="" /></p>
+
+<p><em>flaskapp</em></p>
+
+<p><em>In the configuration editor, you will find the below details</em>.</p>
+
+<p><img src="/assets/images/posts/medium/50dfe6195ecdbb4c.png" alt="" /></p>
+
+<p><em>If you didn’t found configuration or it is throwing an error of web.config. Please check the web.config file. To check it and troubleshoot it in detail the references are shown at the end of the post.</em></p>
+
+<p><em>After successful configuration, If you run your web application at this point it will throw access denied error because the flaskapp application has no permission to access the folder.</em></p>
+
+<p><strong><em>Add Permission</em></strong> <em>to</em> <strong><em>Flask Application</em></strong> <em>and</em> <strong><em>Python folder</em></strong> <em>where your executable is present.</em></p>
+
+<ol>
+  <li><em>Open folder properties.</em></li>
+  <li><em>In Security click on Edit then click on Add</em></li>
+  <li><em>Enter object name as IIS AppPool&lt;yourappname&gt;</em></li>
+  <li><em>Click on the check name if its present click ok and allow permissions you wanted to give then apply it.</em></li>
+  <li><em>This link will help you with permissions.</em> <a href="https://stackoverflow.com/questions/14934006/iis-iusrs-and-iusr-permissions-in-iis8"><em>here</em></a><em>.</em></li>
+</ol>
+
+<p><strong><em>Run your application</em></strong></p>
+
+<p><em>Click on the website added in Sites. Go to manage website click on start to run your application.</em></p>
+
+<h4 id="django-app-withfastcgi"><em>Django App With FastCGI</em></h4>
+
+<ul>
+  <li><em>Add web.config file to the path of the Django application.</em></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;configuration&gt;  
+  &lt;system.webServer&gt;  
+    &lt;handlers&gt;  
+      &lt;add name="Python FastCGI"  
+           path="*"  
+           verb="*"  
+           modules="FastCgiModule"         scriptProcessor="C:\Python36\python.exe|C:\Python36\Lib\site-packages\wfastcgi.py"  
+           resourceType="Unspecified"  
+           requireAccess="Script" /&gt;  
+    &lt;/handlers&gt;  
+  &lt;/system.webServer&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;appSettings&gt;  
+    &lt;!-- Required settings --&gt;  
+    &lt;add key="WSGI_HANDLER" value="myweb.wsgi.application" /&gt;  
+    &lt;add key="PYTHONPATH" value="C:\MyWebApp" /&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;!-- Optional settings --&gt;  
+    &lt;add key="WSGI_LOG" value="C:\Logs\my_app.log" /&gt;  
+  &lt;/appSettings&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><em>Here the</em> <strong><em>WSGI_HANDLER</em></strong> <em>value is the same as</em> <strong><em>WSGI_APPLICATION</em></strong> <em>value defined in setting.py of Django application.</em></li>
+  <li><em>Follow the same procedure of flask application with FastCGI to make the Django application running.</em></li>
+</ul>
+
+<h4 id="references">References:</h4>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/"><em>https://docs.microsoft.com/en-us/iis/configuration/system.webserver/fastcgi/</em></a></li>
+  <li><a href="https://docs.microsoft.com/en-us/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2019"><em>https://docs.microsoft.com/en-us/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2019</em></a></li>
+  <li><a href="https://pypi.org/project/wfastcgi/"><em>https://pypi.org/project/wfastcgi/</em></a></li>
+</ul>
+</div>
+  <ul class="tags" aria-label="Topics"><li>isis</li>
+    <li>django</li>
+    <li>flask</li>
+    <li>fastcgi</li>
+    <li>deployment</li>
+    </ul>
+</article></main>
+  </div>
+  <div class="mobile-social">
+    <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+  </div>
+  <footer class="site-footer">© 2026 Akshay Mewada <span>Built with care. Powered
+      by Jekyll.</span></footer>
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+
+</html>

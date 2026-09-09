@@ -30,10 +30,10 @@
         
         
         <details class="nav-dropdown">
-          <summary>Lab</summary>
+          <summary>Notes</summary>
           <ul class="nav-submenu">
             
-            <li><a href="/articles/search/" >Search</a></li>
+            <li><a href="/articles/text-search/" >Text Searches</a></li>
             
           </ul>
         </details>
@@ -48,6 +48,14 @@
         
         
       </nav>
+      <div class="site-search" role="search" data-index="/search.json">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="site-search-input" type="search" aria-label="Search posts, labs, and games" placeholder="Search…" autocomplete="off" aria-controls="site-search-results">
+        <div class="search-panel" hidden>
+          <p class="search-status" role="status" aria-live="polite"></p>
+          <ul id="site-search-results"></ul>
+        </div>
+      </div>
     </div>
   </header>
   <div class="site-grid">
@@ -125,6 +133,7 @@
   <footer class="site-footer">© 2026 Akshay Mewada <span>Built with care. Powered
       by Jekyll.</span></footer>
   <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
 </body>
 
 </html>

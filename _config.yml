@@ -29,6 +29,11 @@ exclude:
   - .bundle
 defaults:
   - scope:
+      path: "notes/text-searches"
+    values:
+      layout: note
+      note_topic: text-searches
+  - scope:
       path: ""
       type: games
     values:

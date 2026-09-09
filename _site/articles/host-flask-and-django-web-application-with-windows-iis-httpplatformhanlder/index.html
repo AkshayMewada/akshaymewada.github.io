@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Host Flask and Django Web Application with windows IIS HttpPlatformHanlder · Akshay Mewada</title>
+  <meta name="description"
+    content="Internet Information Services(IIS) is a software package tool for hosting websites. Microsoft has made web hosting simpler by providing Internet Information Services(IIS) Software on…">
+  <link rel="canonical" href="http://localhost:4000/articles/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Akshay Mewada" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Akshay Mewada<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        
+        
+        <a href="/" >About</a>
+        
+        
+        
+        <a href="/articles/"  aria-current="page" >Posts</a>
+        
+        
+        
+        <details class="nav-dropdown">
+          <summary>Notes</summary>
+          <ul class="nav-submenu">
+            
+            <li><a href="/articles/text-search/" >Text Searches</a></li>
+            
+          </ul>
+        </details>
+        
+        
+        
+        <a href="/games/" >Play</a>
+        
+        
+        
+        <a href="/files/resume.pdf" >Resume</a>
+        
+        
+      </nav>
+      <div class="site-search" role="search" data-index="/search.json">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="site-search-input" type="search" aria-label="Search posts, labs, and games" placeholder="Search…" autocomplete="off" aria-controls="site-search-results">
+        <div class="search-panel" hidden>
+          <p class="search-status" role="status" aria-live="polite"></p>
+          <ul id="site-search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="site-grid">
+    <aside class="profile" aria-label="Author profile">
+      <img src="/assets/images/profile.jpg" alt="Akshay Mewada" width="88" height="88">
+      <p class="profile-name">Akshay Mewada</p>
+      <p class="bio-title">Software Engineer</p>
+      <p class="bio-subtitle">Automate When It Makes Sense</p>
+      <!-- <p class="location">Mumbai, India</p> -->
+      <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+    </aside>
+    <main id="content" tabindex="-1"><article>
+  <a class="back-link" href="/articles/">← All articles</a>
+  <header class="post-header">
+    <p class="eyebrow">Field notes</p>
+    <h1>Host Flask and Django Web Application with windows IIS HttpPlatformHanlder</h1>
+    
+    <p class="meta"><time datetime="2020-05-16T19:01:00+05:30">May 16, 2020</time> ·
+      3 min read</p>
+  </header>
+  <div class="prose"><p>Originally published on <a href="https://akshaymewada.medium.com/host-flask-and-django-web-application-with-windows-iis-httpplatformhanlder-83e831ce91bc">Medium</a>.</p>
+
+<h4 id="internet-information-servicesiis-is-a-software-package-tool-for-hosting-websites">Internet Information Services(IIS) is a software package tool for hosting websites.</h4>
+
+<blockquote>
+  <p>Microsoft has made web hosting simpler by providing Internet Information Services(IIS) Software on Windows Server/System.</p>
+</blockquote>
+
+<p>IIS provides many features for hosting web applications. Python web app can be hosted by two features <strong><em>Httpplatformhandler</em></strong> and <strong><em>FastCGI</em></strong>.</p>
+
+<p>In this post, we will host a Flask and Django web application using these two features.</p>
+
+<p><img src="/assets/images/posts/medium/ad95eb50e377181b.png" alt="" />
+<img src="/assets/images/posts/medium/2f52553eca4eac1c.png" alt="" /></p>
+
+<p>IIS Window and Add website</p>
+
+<p>For <strong><em>Flask</em></strong> physical path is a path to <strong><em>app.py</em></strong> of your application. <br />
+For <strong><em>Django</em></strong> physical path is a path to <strong><em>manage.py</em></strong> of your application.</p>
+
+<p>Let’s configure Handler Mapping for Website.</p>
+
+<h3 id="httpplatformhandler">Httpplatformhandler</h3>
+
+<p><strong><em>Httpplatoformhandler</em></strong> manages any process like(Java, Ruby, Python, etc.) that can listen on Port for HTTP requests.</p>
+
+<p>Download and Install <strong><em>Httpplatformhandler</em></strong> on IIS using <strong><em>Windows Platform Installer</em>.</strong> or <a href="https://www.iis.net/downloads/microsoft/httpplatformhandler">here</a>.</p>
+
+<h4 id="flask-app-with-httpplatformhandler">Flask APP with Httpplatformhandler</h4>
+
+<ul>
+  <li>Add web.config where your flask is defined.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;  
+&lt;configuration&gt;  
+    &lt;system.webServer&gt;  
+        &lt;handlers&gt;  
+            &lt;add name="httpplatformhandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified" requireAccess="Script" /&gt;  
+        &lt;/handlers&gt;  
+        &lt;httpPlatform startupTimeLimit="10" startupRetryCount="10" stdoutLogEnabled="true" processPath="C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe" arguments="app.py"&gt;  
+            &lt;environmentVariables&gt;  
+                &lt;environmentVariable name="foo" value="bar"/&gt;  
+            &lt;/environmentVariables&gt;  
+        &lt;/httpPlatform&gt;  
+    &lt;/system.webServer&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong>Let us understand the web.config of <em>httpplatformhanlder</em>.</strong></p>
+
+<ol>
+  <li><strong>httpPlaform</strong> is handling the Python process.</li>
+  <li>As mentioned <strong>processPath</strong> is a physical path to python executable.</li>
+  <li>Just like you provide python path in a windows environment variable. To access the python executable. Here you have to provide <strong><em>python.exe</em></strong> in <strong>processPath</strong>.</li>
+  <li><strong>arguments</strong> are the same argument you pass running any python web application. For eg. python <strong><em>app.py -p 5005</em></strong> where app.py to port number all are arguments. In the above application, <strong><em>app.py</em></strong> is passed to run flask application.</li>
+  <li>For more configuration details <a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference"><strong><em>here</em></strong></a><strong><em>.</em></strong></li>
+</ol>
+
+<p>Check the handler is selected perfectly after above web.config is added to flaskapp folder.</p>
+
+<p><img src="/assets/images/posts/medium/00dd48fb27b89e88.png" alt="" /></p>
+
+<p>flaskapp website</p>
+
+<p>In the configuration editor, you will find the below details.</p>
+
+<p><img src="/assets/images/posts/medium/73ae94c45e6e93b6.png" alt="" /></p>
+
+<p>check configuration</p>
+
+<p>If you didn’t found configuration or it is throwing an error of web.config. Please check the web.config file. To check it and troubleshoot it in detail the references are shown at the end of the post.</p>
+
+<p>After successful configuration, If you run your web application at this point it will throw access denied error because the flaskapp application has no permission to access the folder.</p>
+
+<p><strong>Add Permission</strong> to <strong>Flask Application</strong> and <strong>Python folder</strong> where your executable is present.</p>
+
+<ol>
+  <li>Open folder properties.</li>
+  <li>In Security click on Edit then click on Add</li>
+  <li>Enter object name as IIS AppPool&lt;yourappname&gt;</li>
+  <li>Click on the check name if its present click ok and allow permissions you wanted to give then apply it.</li>
+  <li>This link will help you with permissions. <a href="https://stackoverflow.com/questions/14934006/iis-iusrs-and-iusr-permissions-in-iis8">here</a>.</li>
+</ol>
+
+<p><strong>Run your application</strong></p>
+
+<h4 id="django-app-with-httpplatformhandler">Django APP with Httpplatformhandler</h4>
+
+<ul>
+  <li>Add web.config where your Django app is defined.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;  
+&lt;configuration&gt;  
+    &lt;system.webServer&gt;  
+        &lt;handlers&gt;  
+            &lt;add name="httpplatformhandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified" requireAccess="Script" /&gt;  
+        &lt;/handlers&gt;  
+        &lt;httpPlatform startupTimeLimit="10" startupRetryCount="10" stdoutLogEnabled="true" processPath="C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe" arguments="manage.py runserver"&gt;  
+            &lt;environmentVariables&gt;  
+                &lt;environmentVariable name="foo" value="bar"/&gt;  
+            &lt;/environmentVariables&gt;  
+        &lt;/httpPlatform&gt;  
+    &lt;/system.webServer&gt;  
+&lt;/configuration&gt;
+</code></pre></div></div>
+
+<p><strong>Let us understand the web.config of <em>httpplatformhanlder</em>.</strong></p>
+
+<ol>
+  <li>The <strong>processPath</strong> is the same as <strong>python.exe</strong> as explained in the flask app.</li>
+  <li><strong>arguments</strong> are the same argument you pass running any python web application. For eg. python <strong>manage.py runserver</strong> where app.py to port number all are arguments. In the above application, <strong><em>manage.py runserver</em></strong> is passed to run flask application.</li>
+  <li>For more configuration <a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference"><strong><em>here</em></strong></a><strong><em>.</em></strong></li>
+</ol>
+
+<p><strong>Add Permission</strong> to <strong>Django Application</strong> and <strong>Python folder</strong> where your executable is present.</p>
+
+<p><strong>Run your application</strong></p>
+
+<p><a href="https://medium.com/@akshay.mewada7/host-flask-and-django-web-application-wit-windows-iis-fastcgi-df7c9f4669d">The next section of the post is Host Flask and Django Web Application wit windows IIS FastCGI.</a></p>
+
+<h3 id="references">References:</h3>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference">https://docs.microsoft.com/en-us/iis/extensions/httpplatformhandler/httpplatformhandler-configuration-reference</a></li>
+  <li><a href="https://forums.iis.net/t/1232188.aspx?HttpPlatformHandler+Python+Flask+Tornado+">https://forums.iis.net/t/1232188.aspx?HttpPlatformHandler+Python+Flask+Tornado+</a></li>
+</ul>
+</div>
+  <ul class="tags" aria-label="Topics"><li>flask</li>
+    <li>httpplatformhandler</li>
+    <li>django</li>
+    <li>deployment</li>
+    <li>isis</li>
+    </ul>
+</article></main>
+  </div>
+  <div class="mobile-social">
+    <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+  </div>
+  <footer class="site-footer">© 2026 Akshay Mewada <span>Built with care. Powered
+      by Jekyll.</span></footer>
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+
+</html>
