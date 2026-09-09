@@ -93,7 +93,7 @@ nav {
   flex-wrap:wrap
 }
 
-nav a {
+nav a,.nav-dropdown summary {
   font-size:.875rem;
   color:var(--muted);
   text-decoration:none;
@@ -105,6 +105,49 @@ nav a[aria-current] {
   text-decoration:underline;
   text-decoration-color:var(--accent);
   text-decoration-thickness:2px
+}
+
+.nav-dropdown {
+  position:relative
+}
+
+.nav-dropdown summary {
+  cursor:pointer
+}
+
+.nav-dropdown summary:focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:5px;
+  border-radius:2px
+}
+
+.nav-dropdown[open] summary {
+  color:var(--text)
+}
+
+.nav-submenu {
+  position:absolute;
+  right:0;
+  top:100%;
+  min-width:9rem;
+  margin:.25rem 0 0;
+  padding:.4rem;
+  list-style:none;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:8px;
+  box-shadow:0 5px 18px rgb(0 0 0 / 8%)
+}
+
+.nav-submenu a {
+  display:block;
+  padding:.5rem .75rem;
+  border-radius:4px
+}
+
+.nav-submenu a:hover,.nav-submenu a:focus-visible {
+  background:var(--bg);
+  color:var(--text)
 }
 
 .site-grid {
@@ -317,6 +360,8 @@ hr {
 }
 
 .game-card {
+  color:var(--text);
+  text-decoration:none;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
@@ -362,12 +407,7 @@ hr {
   background:var(--surface)
 }
 
-.game-card h2 a {
-  color:var(--text);
-  text-decoration:none
-}
-
-.game-card h2 a:hover {
+.game-card:hover h2,.game-card:focus-visible h2 {
   text-decoration:underline
 }
 
@@ -459,6 +499,10 @@ iframe,video {
 
 nav {
   gap:1.25rem
+}
+
+.nav-submenu {
+  position:static
 }
 
 .site-grid {

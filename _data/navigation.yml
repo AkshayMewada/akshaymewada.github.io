@@ -1,8 +1,12 @@
 - title: About
   url: /
-- title: Articles
+- title: Posts
   url: /articles/
-- title: Games
+- title: Lab
+  children:
+    - title: Search
+      url: /articles/search/
+- title: Play
   url: /games/
 - title: Resume
   url: /files/resume.pdf
