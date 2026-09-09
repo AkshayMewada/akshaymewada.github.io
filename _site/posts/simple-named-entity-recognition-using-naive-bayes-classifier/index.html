@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Named Entity Recognition using Naive Bayes Classifier · Akshay Mewada</title>
+  <meta name="description"
+    content="Named Entity Extraction import subtask of Information Extraction. The Named Entity Extraction is still exploring.">
+  <link rel="canonical" href="http://localhost:4000/posts/simple-named-entity-recognition-using-naive-bayes-classifier/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Akshay Mewada" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Akshay Mewada<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        
+        
+        <a href="/" >About</a>
+        
+        
+        
+        <a href="/posts/"  aria-current="page" >Posts</a>
+        
+        
+        
+        <details class="nav-dropdown">
+          <summary>Notes</summary>
+          <ul class="nav-submenu">
+            
+            <li><a href="/posts/text-search/" >Text Searches</a></li>
+            
+          </ul>
+        </details>
+        
+        
+        
+        <a href="/play/" >Play</a>
+        
+        
+        
+        <a href="/files/resume.pdf" >Resume</a>
+        
+        
+      </nav>
+      <div class="site-search" role="search" data-index="/search.json">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="site-search-input" type="search" aria-label="Search posts, labs, and games" placeholder="Search…" autocomplete="off" aria-controls="site-search-results">
+        <div class="search-panel" hidden>
+          <p class="search-status" role="status" aria-live="polite"></p>
+          <ul id="site-search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="site-grid">
+    <aside class="profile" aria-label="Author profile">
+      <img src="/assets/images/profile.jpg" alt="Akshay Mewada" width="88" height="88">
+      <p class="profile-name">Akshay Mewada</p>
+      <p class="bio-title">Software Engineer</p>
+      <p class="bio-subtitle">Automate When It Makes Sense</p>
+      <!-- <p class="location">Mumbai, India</p> -->
+      <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+    </aside>
+    <main id="content" tabindex="-1"><article>
+  <a class="back-link" href="/posts/">← All posts</a>
+  <header class="post-header">
+    <p class="eyebrow">Field notes</p>
+    <h1>Simple Named Entity Recognition using Naive Bayes Classifier</h1>
+    
+    <p class="meta"><time datetime="2020-05-16T00:00:00+05:30">May 16, 2020</time> ·
+      3 min read</p>
+  </header>
+  <div class="prose"><p>Named Entity Extraction import subtask of Information Extraction. The Named Entity Extraction is still exploring.</p>
+
+<p>Originally published on <a href="https://akshaymewada.medium.com/simple-named-entity-recognition-using-naive-bayes-classifier-2421f92c5b1e">Medium</a>.</p>
+
+<blockquote>
+  <p>Named entity extraction is subtask of information extraction which classify the text(unstructred text) data in predefined classes.</p>
+</blockquote>
+
+<p>Let’s take an example to understand how named entity extraction is useful for information extraction.</p>
+
+<blockquote>
+  <p>What is the time?
+After analyzing the question we can say that user intents to get the current time. Where time is DateTime entity. So the answer will be,</p>
+</blockquote>
+
+<blockquote>
+  <p>The time is 8:20 PM</p>
+</blockquote>
+
+<p>where 8:20 PM is the current time.</p>
+
+<p>Let us build an entity classifier using python. In this, we will understand how the named entity gets classified. In the end, we will create a chatbot using the simple ner classifier.</p>
+<h3 id="named-entity-recognition-data">Named Entity Recognition Data</h3>
+
+<p>Let’s get training data to entity.yaml in which the text and its contained entity is given. In which john, steve, etc is an entity i.e. name.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- text: myself john
+    entity:
+        - pos: 2
+          name: john
+- text: i am roger
+    entity:
+        - pos: 3
+          name: roger
+- text: steve here
+    entity:
+        - pos: 1
+          name: steve
+- text: hey myself david
+    entity:
+        - pos: 3
+          name: david
+
+</code></pre></div></div>
+
+<p>Add more data for better results.</p>
+<h3 id="train-ner-classifier">Train NER Classifier</h3>
+
+<p>Load the entity data file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import yaml
+with open('ent.yaml', 'r') as f:
+    data =  yaml.load(f)
+
+</code></pre></div></div>
+
+<p>The get_features function helps to generate features for training. The function provides the current word relation with previous and next words. It also maintains the pos-tag relation of the given word.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from nltk.tag import pos_tag
+import numpy as np
+
+def get_features(index, word, tokens):
+    prev_word = 'BOS'
+    next_word = 'EOS'
+    if len(tokens) &gt; index+1:
+        next_word = tokens[index+1]
+    if index-1 &gt; 0:
+        prev_word = tokens[index-1]
+    val, tag = pos_tag([word])[0]
+    prev_word, prev_tag = pos_tag([prev_word])[0]
+    next_word, next_tag = pos_tag([next_word])[0]
+    dic = {
+        "word": val,
+        "postag": tag,
+        "nextword": next_word,
+        "nextwordtag": next_tag,
+        "previousword": prev_word,
+        "previoustag": prev_tag,
+    }
+    return dic
+</code></pre></div></div>
+
+<p>Let us generate labels and features for named entity extraction.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>train_data = []
+label = []
+for dic in data:
+    token = dic['text'].split(' ')
+    for i, word in enumerate(token):
+        if dic.__contains__('entity'):
+            for ent in dic['entity']:
+                pos = ent['pos']
+                k, v = list(ent.items())[1]
+                if pos == i+1:
+                    label.append(k)
+                    break
+            else:
+                label.append('O')
+        else:
+            label.append('O')
+        train_data.append(get_features(i ,word, token))
+</code></pre></div></div>
+
+<blockquote>
+  <p>Converting text dictionary into a related number vectors.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from sklearn.feature_extraction import DictVectorizer
+vec = DictVectorizer()
+feature = vec.fit_transform(train_data).toarray()
+
+</code></pre></div></div>
+
+<p>Using the Naive Bayes classifier to classify the entity.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from sklearn.naive_bayes import BernoulliNB
+bnb = BernoulliNB()
+bnb.fit(feature, label)
+
+</code></pre></div></div>
+
+<p>Lets test named entity classifier using get_enitity function.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def get_enitity(sentence):
+    new = []
+    tokens = sentence.split(" ")
+    for i,val in enumerate(tokens):
+        new.append(get_features(i, val, tokens))
+
+    pred = bnb.predict(vec.transform(new).toarray())
+    for i in np.where(pred!='O')[0]:
+        print(text.split(" ")[i])
+
+</code></pre></div></div>
+
+<p>Test Result is:
+For, Hey I am Raju
+It will classify the Raju as an entity.</p>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Throughout we have learned how simply named entity recognition created using Naive Bayes. We learned how to extract information from text.</p>
+
+<p>For fun, you can integrate <a href="/posts/simple-chatbot-using-randoforest/">Intent Classifier</a> and Entity Classifier to web API for good conversation chatbot. You can find a simple example <a href="https://github.com/AkshayMewada/Simple-Chatbot">here</a> .</p>
+<h2 id="what-next">What Next?</h2>
+
+<ul>
+  <li>We can improve the entity classifier by adding more training data and tuning models.</li>
+  <li>For advancement, we can go with models like Conditional Random Field(CRF), Bidirectional Encoder Representations from Transformers(BERT)</li>
+</ul>
+
+<p>After reading this article I am sure you learned the basic entity classifier and how it works.</p>
+
+<p>I would like your suggestions…..</p>
+
+<p>Thank you!!!</p>
+
+</div>
+  <ul class="tags" aria-label="Topics"><li>entity</li>
+    <li>naive bayes</li>
+    <li>chatbots</li>
+    </ul>
+</article></main>
+  </div>
+  <div class="mobile-social">
+    <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+  </div>
+  <footer class="site-footer">© 2026 Akshay Mewada <span>Built with care. Powered
+      by Jekyll.</span></footer>
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+
+</html>

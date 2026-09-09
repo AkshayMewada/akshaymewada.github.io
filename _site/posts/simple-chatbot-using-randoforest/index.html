@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Chatbot Using RandomForest · Akshay Mewada</title>
+  <meta name="description"
+    content="Chatbots are an important part of the industry. Approx 80% of customer services will be handled by chatbots in 2020.">
+  <link rel="canonical" href="http://localhost:4000/posts/simple-chatbot-using-randoforest/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Akshay Mewada" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Akshay Mewada<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        
+        
+        <a href="/" >About</a>
+        
+        
+        
+        <a href="/posts/"  aria-current="page" >Posts</a>
+        
+        
+        
+        <details class="nav-dropdown">
+          <summary>Notes</summary>
+          <ul class="nav-submenu">
+            
+            <li><a href="/posts/text-search/" >Text Searches</a></li>
+            
+          </ul>
+        </details>
+        
+        
+        
+        <a href="/play/" >Play</a>
+        
+        
+        
+        <a href="/files/resume.pdf" >Resume</a>
+        
+        
+      </nav>
+      <div class="site-search" role="search" data-index="/search.json">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="site-search-input" type="search" aria-label="Search posts, labs, and games" placeholder="Search…" autocomplete="off" aria-controls="site-search-results">
+        <div class="search-panel" hidden>
+          <p class="search-status" role="status" aria-live="polite"></p>
+          <ul id="site-search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="site-grid">
+    <aside class="profile" aria-label="Author profile">
+      <img src="/assets/images/profile.jpg" alt="Akshay Mewada" width="88" height="88">
+      <p class="profile-name">Akshay Mewada</p>
+      <p class="bio-title">Software Engineer</p>
+      <p class="bio-subtitle">Automate When It Makes Sense</p>
+      <!-- <p class="location">Mumbai, India</p> -->
+      <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+    </aside>
+    <main id="content" tabindex="-1"><article>
+  <a class="back-link" href="/posts/">← All posts</a>
+  <header class="post-header">
+    <p class="eyebrow">Field notes</p>
+    <h1>Simple Chatbot Using RandomForest</h1>
+    
+    <p class="meta"><time datetime="2019-11-05T00:00:00+05:30">November 5, 2019</time> ·
+      4 min read</p>
+  </header>
+  <div class="prose"><p>Chatbots are an important part of the industry. Approx 80% of customer services will be handled by chatbots in 2020.</p>
+
+<p>Originally published on <a href="https://akshaymewada.medium.com/simple-chatbot-using-randoforest-3106ea2b523e">Medium</a>.</p>
+
+<blockquote>
+  <p>“A chatbot is an AI software system that assists or chats with a human in natural language to provide information, fulfill the tasks.”</p>
+</blockquote>
+
+<p>Let’s understand the chatbot architecture and flow.</p>
+<h3 id="chatbot-flow">Chatbot Flow</h3>
+
+<p>The chatbot flow is based on three main components Intention, Keywords, Chatflow.</p>
+
+<p><img src="/assets/images/posts/medium/chatbot-flow.webp" alt="Chatbot flow diagram" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Example
+User: What is one plus one?
+Bot: one plus one is two.
+</code></pre></div></div>
+
+<ul>
+  <li>Intention or Intent:
+The intent is known as user intention like what the user wants to say, for what he asked the question. In the above example, we can see the user intents to Addition two numbers.</li>
+  <li>Keywords or Entities:
+The Entities is known as the thing user want information about.
+In the above example, we can see that extracted entities are Operation i.e. Plus and Numbers i.e. One, One. On these entities, the bot will run its custom actions.</li>
+  <li>Chatflow:
+The chat flow is the backbone of chatbot conversation. The conversation between user and chatbot must be similar like two human beings are talking to each other. The chat flow gives the chatbot task what chatbot should do on the basis of user intention, previous intention.
+In the above example, the chat-flow gives action for given user intent is Addition operation. All the operations and responses are generated in the Actions and Responses section.</li>
+  <li>Actions and Responses (Chabot Action and Generating Response)
+This is a backend process of chatbot where all tasks or operations get executed. The responses are pre-defined and manipulated by Actions. After execution, the response is generated.
+Let’s build the chatbot model using python. In this, we will learn simple chatbot i.e. intent-response based chatbot. We will use only the intent classifier to create a chatbot. Its chat-flow will be a single-layered.
+    <h3 id="chatbot-data">Chatbot Data</h3>
+  </li>
+</ul>
+
+<p>Let’s get training data to chatdata.json in which the intent and its example questions are given. In which greet is intent and hi, hello are questions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "greet": [
+        "hi",
+        "hello",
+        "hey",
+        "hola"
+    ],
+    "goodbye": [
+        "bye",
+        "goodbye",
+        "good bye"
+    ]
+}
+
+</code></pre></div></div>
+
+<p>The response is predefined in response.json in which the intent and response are given.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "greet": "Hello there...!",
+    "goodbye": "Bye see you later",
+}
+
+</code></pre></div></div>
+
+<p>Add more data for better results.</p>
+<h3 id="train-bot">Train Bot</h3>
+
+<p>Lets read the training and response JSON files.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># JSON Encode-Decode library
+import json
+
+# Reading chat data
+with open("chatdata.json", 'r') as f:
+    chat_data = json.load(f)
+    f.close()
+
+# Reading Resposne
+with open("response.json") as f:
+    response_dict = json.load(f)
+    f.close()
+
+</code></pre></div></div>
+
+<p>Let us prepare the training data for intent classification. Separating intents (as labels) and questions (as features).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Scientific computational library
+import numpy as np
+
+# Training Data
+training_dict = {}
+
+# creating formatted data for fitiing model
+for intent, question_list in chat_data.items():
+    for question in question_list:
+        training_dict[question] = intent
+
+# Separating Features i.e questions and Labels i.e intents
+feature = np.array(list(training_dict.keys()))
+labels = np.array(list(training_dict.values()))
+feature, labels
+</code></pre></div></div>
+
+<ul>
+  <li>The features are row text data. To train model let’s apply pre-processing techniques on features.</li>
+  <li>Here, only the TF-IDF Vectorization approach is used.</li>
+  <li>TF-IDF Vectorization includes two processes Count Vectorization and TF-IDF transformation.</li>
+  <li>The Count Vectorization converts a collection of text to a matrix of token counts.</li>
+  <li>TF-IDF transformer gives the token frequencies of occurrence of the token (word) in given corpus i.e list of sentences (or tex).</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># WordVecotr with TF-IDF
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# Converting text to WordVector
+tf_vec = TfidfVectorizer().fit(feature)
+X = tf_vec.transform(feature).toarray()
+
+# Reshaping labels to fit data
+y = labels.reshape(-1,1)
+</code></pre></div></div>
+
+<p>A Random Forest Classifier is used for Intent classification. Random Forest is a meta estimator that fits the number of Decision Trees on various sub-sample of training data and gives the average accuracy and controls the over-fitting.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Classifier
+from sklearn.ensemble import RandomForestClassifier
+
+# Fitting model
+rnn = RandomForestClassifier(n_estimators=200)
+rnn.fit(X, y)
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>Hurray..!!! we have trained our simple chatbot.</p>
+
+  <p>But how to make conversation?</p>
+  <h3 id="lets-chat">Lets Chat</h3>
+</blockquote>
+
+<p>To chat with chatbot we need an interface. For testing purposes, a command-line interface is best.</p>
+
+<ul>
+  <li>The botanswer function is called for conversation.</li>
+  <li>The text goes through the following steps preprocessing(same as training), prediction, response mapping.</li>
+  <li>The probability threshold is applied in botanswer to give accurate answers only.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Creating response
+def botanswer(q):
+    process_text = tf_vec.transform([q]).toarray()
+    prob = rnn.predict_proba(process_text)[0]
+    max_ = np.argmax(prob)
+    if prob[max_] &lt; 0.6: #Only 60% and above accurate
+        return "Sorry I am not getting you...!"
+    else:
+        return response_dict[rnn.classes_[max_]]
+
+# Chat with bot
+while True:
+    user = input("User&gt;&gt; ")
+    if user == "quit":
+        break
+    print("Bot&gt;&gt; {}".format(botanswer(user)))
+</code></pre></div></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Throughout we have learned how simple chatbot is created using Random Forest. We learned an I ntent-response based chatbot.</p>
+
+<p>For fun, you can add funny conversations and this code to the web applications and create chatbot APIs.</p>
+<h3 id="what-next">What Next?</h3>
+
+<ul>
+  <li>Adding Entity classifier for keyword-based operations. Adding a Chat-flow classifier creates a deep chat loop for human-like conversations.</li>
+  <li>For more accurate and large scale data we can use deep learning for modeling I ntent classification.</li>
+</ul>
+
+<p>After reading this article I am sure you learned the basic architecture of chatbot.</p>
+
+<p>I would like your suggestions…..</p>
+
+<p>Thank you!!!</p>
+</div>
+  <ul class="tags" aria-label="Topics"><li>machine learning</li>
+    <li>chatbot</li>
+    <li>randomforest</li>
+    <li>python</li>
+    </ul>
+</article></main>
+  </div>
+  <div class="mobile-social">
+    <ul class="profile-links" aria-label="Social profiles">
+  <li><a href="https://github.com/AkshayMewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+    
+</svg><span>GitHub</span></a></li><li><a href="https://www.linkedin.com/in/akshaymewada"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <rect x="1" y="1" width="22" height="22" rx="3" />
+    <g fill="var(--bg)">
+        <circle cx="6.5" cy="6.5" r="1.5" />
+        <path
+            d="M5 10h3v9H5zM10 10h3v1.2c.8-1.1 1.8-1.5 3-1.5 2.6 0 3.5 1.7 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2s-1.9.9-1.9 2.2V19h-3z" />
+    </g>
+    
+</svg><span>LinkedIn</span></a></li><li><a href="https://akshaymewada.medium.com/"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <ellipse cx="6.5" cy="12" rx="6" ry="6" />
+    <ellipse cx="17" cy="12" rx="3" ry="5.7" />
+    <ellipse cx="22" cy="12" rx="1" ry="5.1" />
+    
+</svg><span>Medium</span></a></li><li><a href="https://twitter.com/akshaymewada7"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    
+    <path
+        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l8.3-9.5L.8 2h6.5l5.8 7.1L18.9 2ZM17.9 20h1.7L6.3 4H4.5z" />
+    
+</svg><span>X / Twitter</span></a></li>
+</ul>
+  </div>
+  <footer class="site-footer">© 2026 Akshay Mewada <span>Built with care. Powered
+      by Jekyll.</span></footer>
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+
+</html>
