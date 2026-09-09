@@ -1,12 +1,12 @@
 - title: About
   url: /
 - title: Posts
-  url: /articles/
+  url: /posts/
 - title: Notes
   children:
     - title: Text Searches
-      url: /articles/text-search/
+      url: /posts/text-search/
 - title: Play
-  url: /games/
+  url: /play/
 - title: Resume
   url: /files/resume.pdf

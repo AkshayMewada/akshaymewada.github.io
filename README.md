@@ -13,7 +13,7 @@ description: A short summary for the listing.
 ---
 ```
 
-The Text Searches page at `/articles/text-search/` automatically lists these articles alphabetically by title. The folder supplies the note layout and topic through `_config.yml`; an optional `permalink` sets a custom article URL.
+The Text Searches page at `/posts/text-search/` automatically lists these articles alphabetically by title. The folder supplies the note layout and topic through `_config.yml`; an optional `permalink` sets a custom article URL.
 
 ## Free license
 

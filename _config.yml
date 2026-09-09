@@ -4,7 +4,7 @@ url: https://akshaymewada.github.io
 baseurl: ""
 markdown: kramdown
 highlighter: rouge
-permalink: /articles/:title/
+permalink: /posts/:title/
 author:
   name: Akshay Mewada
   bio: Software Engineer 
@@ -17,7 +17,7 @@ plugins:
 collections:
   games:
     output: true
-    permalink: /games/:name/
+    permalink: /play/:name/
 exclude:
   - README.md
   - LICENSE-AUDIT.md
