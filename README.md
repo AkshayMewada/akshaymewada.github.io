@@ -2,6 +2,8 @@
 
 A minimal Jekyll template for a personal website with a profile, blog, experience timeline, and games.
 
+The header includes a Night mode toggle. New visitors start in normal (light) mode; their selection is saved in browser storage for subsequent visits. Both palettes can be customized in `assets/css/style.css`.
+
 ## Text search notes
 
 Add Markdown articles to `notes/text-searches/` with YAML front matter:
